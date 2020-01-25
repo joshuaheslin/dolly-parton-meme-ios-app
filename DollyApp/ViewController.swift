@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupImageViews()
+        addLabels()
+        let image = mainView.asImage()
+        print (image)
+        saveToLibrary(image: image)
+    }
+    
+    func addLabels() {
+        if (imageViewOne != nil) {
+            addLabelTo(imageView: imageViewOne, string: "HELLO")
+        }
     }
 
     func setupImageViews() {
@@ -41,62 +51,45 @@ class ViewController: UIViewController {
         
     }
     
-//    func textToImage(drawText text: String, inImage image: UIImage, atPoint point: CGPoint) -> UIImage {
-//        let textColor = UIColor.white
-//        let textFont = UIFont(name: "Helvetica Bold", size: 15)!
-//
-//        let scale = UIScreen.main.scale
-//        UIGraphicsBeginImageContextWithOptions(image.size, false, scale)
-//
-//        let textFontAttributes = [
-//            NSAttributedString.Key.font: textFont,
-//            NSAttributedString.Key.foregroundColor: textColor,
-//            ] as [NSAttributedString.Key : Any]
-//        image.draw(in: CGRect(origin: CGPoint.zero, size: image.size))
-//
-//        let rect = CGRect(origin: point, size: image.size)
-//        text.draw(in: rect, withAttributes: textFontAttributes)
-//
-//        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-//        UIGraphicsEndImageContext()
-//
-//        return newImage!
-//    }
-    
-    func addLabelTo(imageView: UIImageView, text: String) {
-        let label = UILabel(frame: CGRect(x: imageView.frame.width / 2, y: imageView.frame.width - 15, width: 30, height: 30))
+    func addLabelTo(imageView: UIImageView, string: String) {
+        let length = imageView.frame.width
+        let offset: CGFloat = 25
+        let label = UILabel(frame: CGRect(x: length / 2, y: length - offset, width: length / 2, height: offset))
         label.center.x = imageView.center.x
         label.textColor = UIColor.white
         
-        let strokeTextAttributes: [NSAttributedString.Key : Any] = [
+        let attributes: [NSAttributedString.Key : Any] = [
             .strokeColor : UIColor.black,
             .foregroundColor : UIColor.white,
             .strokeWidth : -2,
-            .font : UIFont.systemFont(ofSize: 20.0),
+            .font : UIFont.systemFont(ofSize: 20, weight: .heavy),
         ]
-        label.attributedText = NSAttributedString(string: "HELLO", attributes: strokeTextAttributes)
         
-        imageView.addSubview(label)
+        let attributedText = NSMutableAttributedString(string: string, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)])
+        attributedText.addAttributes(attributes, range: NSRange(location: 0, length: string.count))
         
+        label.attributedText = attributedText
+        label.textAlignment = .center
+        
+        mainView.addSubview(label)
+        mainView.bringSubview(toFront: label)
     }
     
+    func saveToLibrary(image: UIImage) {
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
     
-    @IBAction func addTextToImage(_ sender: Any) {
-        
-//        let label = UILabel(frame: CGRect(x: 10, y: 0, width: 30, height: 30))
-////        self.imageView.frame.width - 10
-//        label.textColor = UIColor.white
-//
-//
-//        let strokeTextAttributes: [NSAttributedString.Key : Any] = [
-//            .strokeColor : UIColor.black,
-//            .foregroundColor : UIColor.white,
-//            .strokeWidth : -2,
-//            .font : UIFont.systemFont(ofSize: 20.0),
-//        ]
-//        label.attributedText = NSAttributedString(string: "HELLO", attributes: strokeTextAttributes)
-//
-////        self.imageView.addSubview(label)
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            // we got back an error!
+            let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        } else {
+            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
     }
     
     @IBAction func buttonClicked(_ sender: Any) {
@@ -115,7 +108,23 @@ class ViewController: UIViewController {
     
 }
 
-// to handle
+extension UIView {
+    func asImage() -> UIImage {
+        if #available(iOS 10.0, *) {
+            let renderer = UIGraphicsImageRenderer(bounds: bounds)
+            return renderer.image { rendererContext in
+                layer.render(in: rendererContext.cgContext)
+            }
+        } else {
+            UIGraphicsBeginImageContext(self.frame.size)
+            self.layer.render(in:UIGraphicsGetCurrentContext()!)
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            return UIImage(cgImage: image!.cgImage!)
+        }
+    }
+}
+
 extension ViewController: AssetsPickerViewControllerDelegate {
     
     func assetsPickerCannotAccessPhotoLibrary(controller: AssetsPickerViewController) {
