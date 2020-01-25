@@ -1,0 +1,2706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01F031E2F77B138623BCAD75C0972B58 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B58D5372BAB769445C971BE3F87048 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		021C8A00ECAD47DE06E5FDDF43EFBFFE /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCCAED936B53408C938F601C7D50AF /* ru.lproj */; };
+		044548B07979DA22091720CC8D9B51E2 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B426B2F9568C5887BE838242FB449D /* Type.swift */; };
+		0466118A30BA22A951CD16E4BB1FD17C /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AD2259059A84C93E105C89E12C283A /* PureLayout.framework */; };
+		08632E70970F6DC64D8D7A82824C2DD4 /* AssetsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4899ABF794F0BD0614D551DC7A7702D /* AssetsPickerViewController.swift */; };
+		0A67A24966B93B2169DB8FC0526A6FF6 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 476D9420DE6C024E1077F7037A900DCF /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0ABD12E7B613BC7BC447FE1EA9AAE413 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D65C9100EB57B669ACC566FDAA8DC53 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AE9D5B76AAF8FE0EA52E0A70D82A6D7 /* UIImage+Alpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCE06A208E5116DC017E9FA699994B /* UIImage+Alpha.swift */; };
+		0B4608E0AFFC1408A5621045423B4D62 /* AssetsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA4D2891D2ECDBFAF90B7426090B02E /* AssetsUtility.swift */; };
+		0D598B953AA47D701EAAE3AE0B474A8D /* UIScreen+AssetsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B194812E4D059F6DF2B38B9E0795265 /* UIScreen+AssetsPickerViewController.swift */; };
+		1615441A4989C9475E0EF33484F699D6 /* TinyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2DAA0CEBCC70C1EE7D3602C27498B9 /* TinyLog.swift */; };
+		198FD715071B87880E889283C787A06E /* UIViewKVO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B424683649A73BAAAEFA1BFA906EEC4 /* UIViewKVO.framework */; };
+		1FB35DC7CDC6F60DB220B573C8220893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		24A4348050F382761BC3685A88D47001 /* AssetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2307A065F103DB44DBE79A0E057B884 /* AssetsManager.swift */; };
+		28A205001605241554E0899E2909A925 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 60666412230FE52FCCC58A1BEE98DCFA /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28FD4436EEB396A995C5419363E0D997 /* Bundle+AssetsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75A446FEAD781B3C3A3D3EC6AFFE08B /* Bundle+AssetsPickerViewController.swift */; };
+		2CAAC809503651B88FA7359EA5771A7C /* UIView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7B3308F38BE901CC7FCE06F910A438 /* UIView+Fade.swift */; };
+		2D99D50B1CE2B874369895D79B6F7564 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 34CF89B6F820E523932D0BF4C10B49C6 /* de.lproj */; };
+		35FA8BDDB9791CA57E1998314FEF0101 /* UIView+Dimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F61737D1B2EAFDB752D725BBFBF654 /* UIView+Dimmer.swift */; };
+		3705A3C1BA30D76C60513E6E240B13DC /* Pods-DollyApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7F01F3F644436A51E4EF6C394080E0 /* Pods-DollyApp-dummy.m */; };
+		38F77BC22732E8B89EA11959CF80C73B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		39C788A649DC6B8DE8BA0116C8536D8A /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3E894C1CAD6664AA155A2FBF3C044568 /* es.lproj */; };
+		3C468F7D9F2E53582C27775330FA02A9 /* SwiftARGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0813B7E3352AB0B2DE307E5C1C6012BD /* SwiftARGB.framework */; };
+		3D2E6955FF19EA74232220C37E761344 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AD2259059A84C93E105C89E12C283A /* PureLayout.framework */; };
+		3E35C7164AADB5A911A3B901DC460FAD /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F84FE312569EE250170741810542F117 /* ALView+PureLayout.m */; };
+		3EFF24E20852945376F7FF2251FF17D7 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5554B413F83DD9481101CC6042A7A21F /* PureLayout-dummy.m */; };
+		417142A8B7A684D9D7DB76A75A43EC75 /* AssetsNoPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4644584D82CAA24AC36C99A905363BE /* AssetsNoPermissionView.swift */; };
+		43D8E6364C8E17B110F59ABADDAD6101 /* AssetsPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B192749F932D79971EB075FBDD3F2C /* AssetsPreviewController.swift */; };
+		47BDE7141F23491FB9A64B95337C930D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		52C7A1695D79C8C71821F8DB01A427E9 /* UIColor+ARGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860A65993EFBBD3641B4AD968D8492E /* UIColor+ARGB.swift */; };
+		5396F05B2B6E0D3C1901BDA0958B098F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		544D062063F08B31447C06E042AE29E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		5712E06250EBB37952FD7ECACA55212F /* Dimmer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FB13D65DB9BEC179F09B0942AA9A56 /* Dimmer-dummy.m */; };
+		5A75B381A6E395D6701F35683E2E23C1 /* TinyLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C01670DD4E7EF60D386D7A2565B2A2 /* TinyLog.framework */; };
+		5D07B5A4BBABD4EDF787ECF7816612DD /* AssetsPickerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B5113A71792B8C63C96ACECA7B194 /* AssetsPickerConfig.swift */; };
+		5E599EB7AFF9B2366DBFC07493A5D108 /* AssetsPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C73ED65A430ED601D6A4CD10B21FF10 /* AssetsPhotoViewController.swift */; };
+		5F8C67C45585139E6039B28F48E20C68 /* NumberFormatter+AssetsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA438F5489BFDFE2C1B31A8675E3C821 /* NumberFormatter+AssetsPickerViewController.swift */; };
+		600F5C4F7C31628E8BFEED4A682759A8 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4663C631771824CD7690C27E4998FAE0 /* zh-Hans.lproj */; };
+		6261509D3F8AB076010215958D1CDEA8 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2E98BDA5D398CA9D9A079C1351B8C385 /* en.lproj */; };
+		62DFA56B7FBBE5D6577CD0ECE30B3F0E /* FadeView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F3EF265EC147CC10114C7900C6FA9C4 /* FadeView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		642136708BE23684238152698119D30F /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA5E85AA35A604E9A4D2A71E9F6C1E /* Version.swift */; };
+		68BB5E2251EAA02D14997406FF0628BD /* AssetsAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5464C17FF46163D3981D0539C6065A6 /* AssetsAlbumViewController.swift */; };
+		6937997B0EF2D2737B61D6F96963DA53 /* AssetsCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B03ED645898BDC5CC517D94C720A704 /* AssetsCropViewController.swift */; };
+		6ACAED1159E99F154408CD25B7562FEC /* TinyLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C01670DD4E7EF60D386D7A2565B2A2 /* TinyLog.framework */; };
+		6B813AC62FC3496AEDA96BF50C6FE5ED /* AssetsPhotoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B478AA9F7387C307B8C010EC867DAA /* AssetsPhotoLayout.swift */; };
+		711C18DFF8E90CC000AA6956DEBC40D2 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EC1F7B1F2EA6E164087896245E888934 /* tr.lproj */; };
+		7188247AE56E04060C8F09CE5DC97B7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		77795B0E992A61F63C3F372973B36C7A /* SwiftARGB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB3716FB7408388943415B2DE5DF8FE /* SwiftARGB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7842DCAFDE602BFD84B6A36F118ADB4B /* Pods-DollyAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1413E3F58DFEE38F56E2E733F55AE89 /* Pods-DollyAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78B003AD743BDD3759FFB73E58049CB9 /* hi-IN.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A28083B5AF176539D5B55E7E3A83918D /* hi-IN.lproj */; };
+		7BD5218115D8AB1A722EF8B13153765B /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5292D0D4918AD2C9BEF32392B5AFB1A9 /* zh-Hant.lproj */; };
+		7C3F13C4DCBCA5362F55C40D4990E84C /* AssetsPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B11A977158F428210243420F7DA769 /* AssetsPhotoCell.swift */; };
+		7E7D098E207F5990C38C21A01E24A0F7 /* AssetsAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C2BAE01984E6921583BBA71C57EBD6 /* AssetsAlbumCell.swift */; };
+		7EDB2D9AD2819190F42780977044E6FA /* UIFont+AssetsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED887CD3A93977172D9F3EAC6DD2F8 /* UIFont+AssetsPickerViewController.swift */; };
+		7F7F4B283C51491374870EE3D193324D /* Pods-DollyApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EA438AD322EB357172972DDC0830355 /* Pods-DollyApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FAAA89D694A80816A1317B252BCEBC2 /* AssetsPickerViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD66E77D0F288257371725D3E51DBBEE /* AssetsPickerViewController.bundle */; };
+		84E233080E61741D6397E489109E9B25 /* FadeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F0A0B34608CFDA22E2D251A3C79B6 /* FadeView.framework */; };
+		8573C9C7210CDF30CA67A27DD991883B /* SwiftARGB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF60C29258C7D6195E0BDDD105BA41A /* SwiftARGB-dummy.m */; };
+		861524512532D2607EEAE8E5AA6029A9 /* Pods-DollyAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C01F355B9146B6EFA8129A9B7FDF8B /* Pods-DollyAppTests-dummy.m */; };
+		8ACB265291A7F09D4F68BD4C02D3F04D /* es-MX.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A84B2434EE31217B3F775B6C233F93E2 /* es-MX.lproj */; };
+		8FE5D521BC85C51FD42BB2F7EFF07AFB /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77D6FE79C5AF077C5232B440EE3F21E /* Size.swift */; };
+		95CE48737BCAF67262F4914ECEB052CF /* FadeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F0A0B34608CFDA22E2D251A3C79B6 /* FadeView.framework */; };
+		95DF99EB13C80E952258DE865B5707CF /* SSCheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F3DA411A35CC2AD751201E4B879A04 /* SSCheckMark.swift */; };
+		96E89A4E025C4C5F3375FE5D88C37A67 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F9747D95C6D752C1F3D27FBF6A95DD6B /* ja.lproj */; };
+		96F3A82E36F00ED20974DDCCBEEA5CC3 /* AssetsAlbumLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF5C88992AF360D4656A610EE5DFBCA /* AssetsAlbumLayout.swift */; };
+		9A4384D38C150A5930BF7A5D329A1AC1 /* AssetsPickerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CB433BA2CC63E49F747F0CC29B4350 /* AssetsPickerViewController-dummy.m */; };
+		9A50A105C7D6459DD39FF0663FD4CDDD /* UIImage+ARGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D38F600A6DE4FDBB5FF786D7F91AD3 /* UIImage+ARGB.swift */; };
+		9AA9CB28DD456FF98855981E4D6B551A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		9C57709456E7AAA6E8AE0C2D0F47A536 /* UIViewKVO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE76A8984B3916E7D4E611AF626BCCB /* UIViewKVO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F97F1AC05936CE2ED50DB77896E8F9E /* Device+AssetsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3176019E712B8B9167A014E4A4D39 /* Device+AssetsPickerViewController.swift */; };
+		A5BB7635C5E72047024E4AD3D9E22486 /* AssetsManager+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550C4950D187FD728439B1D8EA9705D7 /* AssetsManager+Sync.swift */; };
+		B47B42EF1087ADB748CCACB6F6F90110 /* AssetsPickerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB412E480B7E498EC2E7B668F496BF0 /* AssetsPickerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B523A484A553351ADBD2B32B828CD176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		B566EF4257575DC92AB3537BE6504B76 /* AssetsPhotoCellOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F972B30A505015C47596ACFD55F78046 /* AssetsPhotoCellOverlay.swift */; };
+		B5BAA9D652C66BDA25C12997BCF337D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		B6BBFCA0FF4B2A380BE8FFF757B7FF5E /* Pods-DollyAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 653E25AFC0206AA90E09327047FB0305 /* Pods-DollyAppUITests-dummy.m */; };
+		B88883DF6C4C39DA49F88069F84DB1C2 /* AssetsAlbumTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2739AF6954FB695CD2414DCBA55A1334 /* AssetsAlbumTitleView.swift */; };
+		BA3937E774DADFBEAF952967F2A1D84F /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0AF9576B29A1B389717678924B68196 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA583804F6A7D5EF03B8C68418D947BC /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF194F2132E8A11FD16B2591E44D232 /* NSLayoutConstraint+PureLayout.m */; };
+		BA82A657DCFA4FFAE3EB03591C260D77 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEC5DC5F72AC85260CE74032CFC189C /* Device.swift */; };
+		BAA43E9EEBE5CE83FE145F0B842161E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		BF419062B4437A24E4593F3A991B217C /* TinyLog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865CB687502449E200CD275168F7B53 /* TinyLog-dummy.m */; };
+		C0225C280961123604AEA38070F664CD /* AssetsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043362364C07BFFF810A99BDC55F93B5 /* AssetsFooterView.swift */; };
+		C0724FFFAB3387688A66774AC65C1E6E /* String+AssetsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C111F5EEBECE6C544A30964E098B64B9 /* String+AssetsPickerViewController.swift */; };
+		C1FF1EA3D5A4047F505D612FCE379E2C /* UIViewKVO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B424683649A73BAAAEFA1BFA906EEC4 /* UIViewKVO.framework */; };
+		C6BF834EC3947B4531A3C2440FFA7484 /* Device-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 133412A4BF816FB8BC4DE64CFAEDEE3A /* Device-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7FE3CEBAF9AE83BD37AD049A8476B7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */; };
+		D1116B236A7F3383C70C30B311978A03 /* PanoramaIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626240C3636FFFFA0A70261CD0C76023 /* PanoramaIconView.swift */; };
+		D82D218451ECBE0DDE1539220FCF7E7A /* FadeView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93246E09AFBC68F8C1C7650E7EC31A9F /* FadeView-dummy.m */; };
+		D8EC8FAA493B3C6E76546FA8A05714C6 /* UIView+KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26817688D25A804D4FFC2EB1DAC346CE /* UIView+KVO.swift */; };
+		DA3594B11271E515B599EDE5B774FE81 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E813BDC70D965595B40368965D36C4D4 /* fr.lproj */; };
+		DBF0C2613570BC06E9C48423E2E3BE81 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D8FEA3822B77EA7C0F5A82B1366F5A3D /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD7F8E8D1C14C3A1F742CD73EC67A972 /* AssetsAlbumHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD7E3920EF58267F638456FE908207F /* AssetsAlbumHeaderView.swift */; };
+		DEAEE53C88459B7359931EF98C79F53B /* Device-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB85FA180572B0971FCC9F5CEF52F003 /* Device-dummy.m */; };
+		E4830B9566DFF5B0DD44F24ADD0B4359 /* Dimmer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2713390439855D3B23AF7DD1710D3D6 /* Dimmer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5490B3DB1AEB83575CD1317AEF3B331 /* TinyLog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 213A0320DFEA3982FA9797F2C1B84C61 /* TinyLog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E93E32D30EC85311B9CAFD1CEDAFFBEC /* UIViewController+Dimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D780740003383CB4ECC68DE1F3351A31 /* UIViewController+Dimmer.swift */; };
+		EAEA90B7867B0C6F484EAB5B36D1E63F /* Device.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1674D04EAFD398BD7FD087DF4E5869 /* Device.framework */; };
+		EB992E835F0E65DA4E5C6C5E26AE470A /* Dimmer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34336419B257FA635A010569113D520A /* Dimmer.framework */; };
+		ECEC7B06FAA68893B15119092212D947 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE9E7D8C2D4132B2AA661E7729166A9 /* NSArray+PureLayout.m */; };
+		EF7C0F64319455DFA7142CE02F277E4C /* UIViewKVO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBAB8481522AEDB95DFB2DA4FCD13E8 /* UIViewKVO-dummy.m */; };
+		F00177FD135C4DF943447F860E794D21 /* Pods-DollyAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A02E552BF6810949F667295090CCED7 /* Pods-DollyAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2F76BD2AE605EBFDFF1BF98DBDC446E /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C90371AA705AFCAEEAEE8A79AF2A2E /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5AA52F21A45B4D0F636ECCCAF1EFAF3 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5BF94D6F59FCD3322343B16C21AE3959 /* ar.lproj */; };
+		F665AA87304C3B48076ECF882B7CCEDD /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 83CE954ED23451C965A9396C8E3302B8 /* id.lproj */; };
+		F9902C96CE71B1AFF86EA956D311BCBC /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CEF96BC472157D949750AE491BD716FD /* ko.lproj */; };
+		FC33828E62D9A14BF11A4D7102B34C2C /* AssetsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501796AAC98576484D049BB7ACB4F189 /* AssetsEmptyView.swift */; };
+		FD43238A1FA176B97640C865CDD76A4A /* AssetsGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01AB1516C7D6C83F6D0DE0545F89E91 /* AssetsGuideView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06285441ECFB77273C76FDBCBB46D112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 549C7F1CE1F3AFBAEC52D785E0DE7B24;
+			remoteInfo = "AssetsPickerViewController-AssetsPickerViewController";
+		};
+		0D4451C74B519CB508EFC749A684F40E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE04B7EC204AE43FDF05E6A68E30312F;
+			remoteInfo = TinyLog;
+		};
+		11D2C3E7D91AA9EEB3A5481CC6700ACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB5F92AD446F2DEED19DD893A8DD053;
+			remoteInfo = UIViewKVO;
+		};
+		1BBBCCD99F45944BD0FC4CEA09505AA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9CE6BF8FC81CED7AA3E7515D7EA457;
+			remoteInfo = FadeView;
+		};
+		1EB8F112565C7112D2A9850ADF518328 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BBC3AD443BBA69BC4968AF4258E63F;
+			remoteInfo = PureLayout;
+		};
+		2D29F96839D599E8DAE3FB1833B5D5FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A56F4D9B7BFD3C02C88F0B833727D54;
+			remoteInfo = "Pods-DollyApp";
+		};
+		3733F928B5AC6F5A98E662581AD958A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9CE6BF8FC81CED7AA3E7515D7EA457;
+			remoteInfo = FadeView;
+		};
+		45B86A79863400E97134D65D24E8D030 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BBC3AD443BBA69BC4968AF4258E63F;
+			remoteInfo = PureLayout;
+		};
+		60F448A141C5FA7A52C7764086788B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE04B7EC204AE43FDF05E6A68E30312F;
+			remoteInfo = TinyLog;
+		};
+		635D2C31DCE011A8C0F7892072899136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BBC3AD443BBA69BC4968AF4258E63F;
+			remoteInfo = PureLayout;
+		};
+		74DBABC20A4F95F9A70C49056E935C40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E443A2986DC6AC20EE63E8B1669B2F6;
+			remoteInfo = Device;
+		};
+		7F0B5E16A337258B328BB8DE58D6CFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB5F92AD446F2DEED19DD893A8DD053;
+			remoteInfo = UIViewKVO;
+		};
+		8B50243981D977C796251DBD598EFC88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9243F01902F5E3ABAF67FFB72F8A0A66;
+			remoteInfo = SwiftARGB;
+		};
+		9308D9BDD0CA19EB3C88AF59F95F10CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF247BE7A2EA4965C1B27E9C6106BA1;
+			remoteInfo = Dimmer;
+		};
+		95684B592490F333C1741CC5F9F544C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB5F92AD446F2DEED19DD893A8DD053;
+			remoteInfo = UIViewKVO;
+		};
+		B86F30823C0614249B8C3C7BE8701836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF247BE7A2EA4965C1B27E9C6106BA1;
+			remoteInfo = Dimmer;
+		};
+		BCBDDE45C9580D5728A5D8191687260D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E443A2986DC6AC20EE63E8B1669B2F6;
+			remoteInfo = Device;
+		};
+		BD6F3B3BFD165F1E63E1F5957941B334 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9CE6BF8FC81CED7AA3E7515D7EA457;
+			remoteInfo = FadeView;
+		};
+		D605C95F4CE03FB122FCF33D1A4350D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9243F01902F5E3ABAF67FFB72F8A0A66;
+			remoteInfo = SwiftARGB;
+		};
+		E3D189A57C893B50F2A033A754A3B5A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EE214E1821DFF50D2F2FE08A754C15B;
+			remoteInfo = AssetsPickerViewController;
+		};
+		EE51C852C62AD884EC1D4EAD70A116BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A56F4D9B7BFD3C02C88F0B833727D54;
+			remoteInfo = "Pods-DollyApp";
+		};
+		FC0FE537A223B1302CB51CEBB2947C8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE04B7EC204AE43FDF05E6A68E30312F;
+			remoteInfo = TinyLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B01145E1B0E6B092E25D2BF43C30DE /* UIViewKVO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIViewKVO.xcconfig; sourceTree = "<group>"; };
+		043362364C07BFFF810A99BDC55F93B5 /* AssetsFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsFooterView.swift; path = AssetsPickerViewController/Classes/Photo/View/AssetsFooterView.swift; sourceTree = "<group>"; };
+		04871B0C8F54FAF49262C19FA1CA231B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B58D5372BAB769445C971BE3F87048 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		05D32B9EB4B37F2B095F7828B5E12436 /* UIViewKVO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UIViewKVO.modulemap; sourceTree = "<group>"; };
+		05EF84263D76EF61B1340FAB6F90E751 /* SwiftARGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftARGB.framework; path = SwiftARGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07A3F006CE9CB329A56DBE25EB517C85 /* Pods-DollyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DollyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0813B7E3352AB0B2DE307E5C1C6012BD /* SwiftARGB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftARGB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0865CB687502449E200CD275168F7B53 /* TinyLog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TinyLog-dummy.m"; sourceTree = "<group>"; };
+		09CFF7A06C7F0481573D269F7517E51A /* Dimmer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dimmer.xcconfig; sourceTree = "<group>"; };
+		0A02E552BF6810949F667295090CCED7 /* Pods-DollyAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DollyAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		0A07EB6D34C654CEA353EFEDFC57CD3B /* SwiftARGB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftARGB.xcconfig; sourceTree = "<group>"; };
+		0D71F326840DD09A30289C03B77CD18B /* TinyLog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TinyLog.modulemap; sourceTree = "<group>"; };
+		0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0EA438AD322EB357172972DDC0830355 /* Pods-DollyApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DollyApp-umbrella.h"; sourceTree = "<group>"; };
+		0EF194F2132E8A11FD16B2591E44D232 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		1100858C98F384BBBF3B5100848D449E /* Device.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Device.xcconfig; sourceTree = "<group>"; };
+		110157C1638A9A5DF8210EDDED5E874A /* Pods-DollyAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DollyAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		121B5113A71792B8C63C96ACECA7B194 /* AssetsPickerConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsPickerConfig.swift; path = AssetsPickerViewController/Classes/Picker/AssetsPickerConfig.swift; sourceTree = "<group>"; };
+		12AC68B6CEBFCD5A7EBD6912D8BD517F /* Pods-DollyAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DollyAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		133412A4BF816FB8BC4DE64CFAEDEE3A /* Device-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Device-umbrella.h"; sourceTree = "<group>"; };
+		13F61737D1B2EAFDB752D725BBFBF654 /* UIView+Dimmer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Dimmer.swift"; path = "Dimmer/Classes/UIView+Dimmer.swift"; sourceTree = "<group>"; };
+		17590EDC1796C5750CB226B5AC7CFB6E /* Pods-DollyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DollyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		17803FD6D5299129C7F31BDF906A1137 /* AssetsPickerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssetsPickerViewController-prefix.pch"; sourceTree = "<group>"; };
+		18ED887CD3A93977172D9F3EAC6DD2F8 /* UIFont+AssetsPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+AssetsPickerViewController.swift"; path = "AssetsPickerViewController/Classes/Utility/UIFont+AssetsPickerViewController.swift"; sourceTree = "<group>"; };
+		1B03ED645898BDC5CC517D94C720A704 /* AssetsCropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsCropViewController.swift; path = AssetsPickerViewController/Classes/Crop/Controller/AssetsCropViewController.swift; sourceTree = "<group>"; };
+		1B194812E4D059F6DF2B38B9E0795265 /* UIScreen+AssetsPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScreen+AssetsPickerViewController.swift"; path = "AssetsPickerViewController/Classes/Utility/UIScreen+AssetsPickerViewController.swift"; sourceTree = "<group>"; };
+		1B21E555101AB9A9BBD1E9C252387D2B /* Pods-DollyApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DollyApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		1DC679A61ADD72E175EAE2FE7979D5CE /* Pods_DollyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DollyAppTests.framework; path = "Pods-DollyAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD7E3920EF58267F638456FE908207F /* AssetsAlbumHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsAlbumHeaderView.swift; path = AssetsPickerViewController/Classes/Album/View/AssetsAlbumHeaderView.swift; sourceTree = "<group>"; };
+		213A0320DFEA3982FA9797F2C1B84C61 /* TinyLog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyLog-umbrella.h"; sourceTree = "<group>"; };
+		2489FB0E15079E5C84B647D894A0FF15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		254F0A0B34608CFDA22E2D251A3C79B6 /* FadeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FadeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2649063461F8DB27E59A1F85184FD38D /* SwiftARGB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftARGB.modulemap; sourceTree = "<group>"; };
+		26817688D25A804D4FFC2EB1DAC346CE /* UIView+KVO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+KVO.swift"; path = "UIViewKVO/Classes/UIView+KVO.swift"; sourceTree = "<group>"; };
+		2739AF6954FB695CD2414DCBA55A1334 /* AssetsAlbumTitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsAlbumTitleView.swift; path = AssetsPickerViewController/Classes/Album/View/AssetsAlbumTitleView.swift; sourceTree = "<group>"; };
+		2AF7630082DF0A1F311370825828731C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C27489A77114FE6509011897FC03268 /* Pods-DollyAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DollyAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2D6BEC7B9611FF719E6DD802C4850689 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E98BDA5D398CA9D9A079C1351B8C385 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = AssetsPickerViewController/Assets/en.lproj; sourceTree = "<group>"; };
+		301038D7C1E62DEC4781736D145025A4 /* UIViewKVO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIViewKVO.framework; path = UIViewKVO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C90371AA705AFCAEEAEE8A79AF2A2E /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		34336419B257FA635A010569113D520A /* Dimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34CF89B6F820E523932D0BF4C10B49C6 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = AssetsPickerViewController/Assets/de.lproj; sourceTree = "<group>"; };
+		3A48D6B660FB6D9E25A7EA57B7A815FE /* FadeView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FadeView.xcconfig; sourceTree = "<group>"; };
+		3C25AA98EB4126C6613C552C64AE43D0 /* FadeView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FadeView-prefix.pch"; sourceTree = "<group>"; };
+		3CB630B7850A4E1FD7FE2CA93FBD0B35 /* AssetsPickerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AssetsPickerViewController.xcconfig; sourceTree = "<group>"; };
+		3CE8343052CC120808DA57BEDA4C0645 /* TinyLog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TinyLog.xcconfig; sourceTree = "<group>"; };
+		3E810C3200C2EC4546E5BA4DEECC4542 /* TinyLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TinyLog.framework; path = TinyLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E894C1CAD6664AA155A2FBF3C044568 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = AssetsPickerViewController/Assets/es.lproj; sourceTree = "<group>"; };
+		3EDA5E85AA35A604E9A4D2A71E9F6C1E /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = Source/Version.swift; sourceTree = "<group>"; };
+		3EE3176019E712B8B9167A014E4A4D39 /* Device+AssetsPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Device+AssetsPickerViewController.swift"; path = "AssetsPickerViewController/Classes/Utility/Device+AssetsPickerViewController.swift"; sourceTree = "<group>"; };
+		41E046B56D40E3AEC67A053887F29079 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		4663C631771824CD7690C27E4998FAE0 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "AssetsPickerViewController/Assets/zh-Hans.lproj"; sourceTree = "<group>"; };
+		476D9420DE6C024E1077F7037A900DCF /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		48371A3B96BAAA4F491ECE17E7743206 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		4860A65993EFBBD3641B4AD968D8492E /* UIColor+ARGB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+ARGB.swift"; path = "SwiftARGB/Classes/UIColor+ARGB.swift"; sourceTree = "<group>"; };
+		4A3899AC15066EEE8E00FEC4763185E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BEC5DC5F72AC85260CE74032CFC189C /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Source/iOS/Device.swift; sourceTree = "<group>"; };
+		4EE9E7D8C2D4132B2AA661E7729166A9 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		4FF60C29258C7D6195E0BDDD105BA41A /* SwiftARGB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftARGB-dummy.m"; sourceTree = "<group>"; };
+		501796AAC98576484D049BB7ACB4F189 /* AssetsEmptyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsEmptyView.swift; path = AssetsPickerViewController/Classes/Photo/View/AssetsEmptyView.swift; sourceTree = "<group>"; };
+		506F3C14FA48728CE84D54E305354567 /* Device-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Device-prefix.pch"; sourceTree = "<group>"; };
+		50AD2259059A84C93E105C89E12C283A /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C01F355B9146B6EFA8129A9B7FDF8B /* Pods-DollyAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DollyAppTests-dummy.m"; sourceTree = "<group>"; };
+		5292D0D4918AD2C9BEF32392B5AFB1A9 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "AssetsPickerViewController/Assets/zh-Hant.lproj"; sourceTree = "<group>"; };
+		550C4950D187FD728439B1D8EA9705D7 /* AssetsManager+Sync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AssetsManager+Sync.swift"; path = "AssetsPickerViewController/Classes/Assets/AssetsManager+Sync.swift"; sourceTree = "<group>"; };
+		5554B413F83DD9481101CC6042A7A21F /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		582B04AB49E7C28F7179193B56B04D2E /* Pods-DollyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DollyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5BF94D6F59FCD3322343B16C21AE3959 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = AssetsPickerViewController/Assets/ar.lproj; sourceTree = "<group>"; };
+		5CB3716FB7408388943415B2DE5DF8FE /* SwiftARGB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftARGB-umbrella.h"; sourceTree = "<group>"; };
+		5FFCCAED936B53408C938F601C7D50AF /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = AssetsPickerViewController/Assets/ru.lproj; sourceTree = "<group>"; };
+		60666412230FE52FCCC58A1BEE98DCFA /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		6184F13ECDE89F5FF680CFDC8C182CE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626240C3636FFFFA0A70261CD0C76023 /* PanoramaIconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanoramaIconView.swift; path = AssetsPickerViewController/Classes/Photo/View/PanoramaIconView.swift; sourceTree = "<group>"; };
+		653E25AFC0206AA90E09327047FB0305 /* Pods-DollyAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DollyAppUITests-dummy.m"; sourceTree = "<group>"; };
+		6710F9B2DFF10AB1154B48E30CEAB2CA /* Pods-DollyAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DollyAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		68A5FEC927ED0270FFB02EAAE831773A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B424683649A73BAAAEFA1BFA906EEC4 /* UIViewKVO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIViewKVO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C69615467FDCE1237F183E5D9CEE3C2 /* Device.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Device.modulemap; sourceTree = "<group>"; };
+		6D0FCD0EDE48EB960B011149FB3C5F5F /* Pods_DollyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DollyApp.framework; path = "Pods-DollyApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F3EF265EC147CC10114C7900C6FA9C4 /* FadeView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FadeView-umbrella.h"; sourceTree = "<group>"; };
+		7AFB84659A9C23B3CD7927CD6F7C709C /* FadeView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FadeView.modulemap; sourceTree = "<group>"; };
+		7CBED8E763E3D2D4D10D5D4356C1A4B9 /* Pods-DollyApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DollyApp.modulemap"; sourceTree = "<group>"; };
+		7D04E76C8C9F9F94C21B1BF472523DB4 /* Dimmer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dimmer-prefix.pch"; sourceTree = "<group>"; };
+		7DE76A8984B3916E7D4E611AF626BCCB /* UIViewKVO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewKVO-umbrella.h"; sourceTree = "<group>"; };
+		7EBAB8481522AEDB95DFB2DA4FCD13E8 /* UIViewKVO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewKVO-dummy.m"; sourceTree = "<group>"; };
+		7EDE19FFC61AE98F89A708FBC9616CF5 /* Pods-DollyApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DollyApp-frameworks.sh"; sourceTree = "<group>"; };
+		80B426B2F9568C5887BE838242FB449D /* Type.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type.swift; path = Source/Type.swift; sourceTree = "<group>"; };
+		83CE954ED23451C965A9396C8E3302B8 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = AssetsPickerViewController/Assets/id.lproj; sourceTree = "<group>"; };
+		840D1E19B791B7AAA10BE9339CE0092F /* Pods-DollyAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DollyAppTests-resources.sh"; sourceTree = "<group>"; };
+		84B11A977158F428210243420F7DA769 /* AssetsPhotoCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsPhotoCell.swift; path = AssetsPickerViewController/Classes/Photo/View/AssetsPhotoCell.swift; sourceTree = "<group>"; };
+		88407480BBDD6B14E957C7585FC72E24 /* Pods-DollyAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DollyAppUITests-resources.sh"; sourceTree = "<group>"; };
+		891F0C5BBF9E12FA90D0A407057E5715 /* AssetsPickerViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AssetsPickerViewController.modulemap; sourceTree = "<group>"; };
+		8C73ED65A430ED601D6A4CD10B21FF10 /* AssetsPhotoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsPhotoViewController.swift; path = AssetsPickerViewController/Classes/Photo/Controller/AssetsPhotoViewController.swift; sourceTree = "<group>"; };
+		9009B30CB9B42F4C55F1EB8F02A17AC6 /* Pods-DollyApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DollyApp-resources.sh"; sourceTree = "<group>"; };
+		9159CD773E9F575BD00590BB71827D32 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916885D4A7633BF7A34EE0DEEADACC69 /* Pods-DollyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DollyApp.release.xcconfig"; sourceTree = "<group>"; };
+		93246E09AFBC68F8C1C7650E7EC31A9F /* FadeView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FadeView-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98EECE06B366095827E8A21202F0BAE3 /* Pods-DollyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DollyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		99C01670DD4E7EF60D386D7A2565B2A2 /* TinyLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TinyLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D65C9100EB57B669ACC566FDAA8DC53 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		9E960BF765544149D09CF41D0FC321C5 /* TinyLog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TinyLog-prefix.pch"; sourceTree = "<group>"; };
+		A17E8A2170A3A81A144D01C0218C9402 /* Dimmer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Dimmer.framework; path = Dimmer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C203DFA4CA41B33DB853AB3A9775AF /* Device.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Device.framework; path = Device.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28083B5AF176539D5B55E7E3A83918D /* hi-IN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "hi-IN.lproj"; path = "AssetsPickerViewController/Assets/hi-IN.lproj"; sourceTree = "<group>"; };
+		A5464C17FF46163D3981D0539C6065A6 /* AssetsAlbumViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsAlbumViewController.swift; path = AssetsPickerViewController/Classes/Album/Controller/AssetsAlbumViewController.swift; sourceTree = "<group>"; };
+		A57EF3EC1C49C10248D166F7BA1173EA /* Pods-DollyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DollyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A71E5714A146116A76B2883750334678 /* Pods_DollyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DollyAppUITests.framework; path = "Pods-DollyAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B478AA9F7387C307B8C010EC867DAA /* AssetsPhotoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsPhotoLayout.swift; path = AssetsPickerViewController/Classes/Photo/View/AssetsPhotoLayout.swift; sourceTree = "<group>"; };
+		A84B2434EE31217B3F775B6C233F93E2 /* es-MX.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "es-MX.lproj"; path = "AssetsPickerViewController/Assets/es-MX.lproj"; sourceTree = "<group>"; };
+		A875B8DBB38152D1E8C12FE4F642A6BE /* Pods-DollyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DollyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A8BF08F329E96C84A7A34555EC8F9B92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8AE281926A4F8A6A44BFC7A4D8FEB3 /* SwiftARGB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftARGB-prefix.pch"; sourceTree = "<group>"; };
+		AE0D8E32EBC5D331A767C0B09B4E33F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA4D2891D2ECDBFAF90B7426090B02E /* AssetsUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsUtility.swift; path = AssetsPickerViewController/Classes/Assets/AssetsUtility.swift; sourceTree = "<group>"; };
+		B1CB433BA2CC63E49F747F0CC29B4350 /* AssetsPickerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AssetsPickerViewController-dummy.m"; sourceTree = "<group>"; };
+		B3B192749F932D79971EB075FBDD3F2C /* AssetsPreviewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsPreviewController.swift; path = AssetsPickerViewController/Classes/Photo/Controller/AssetsPreviewController.swift; sourceTree = "<group>"; };
+		B3D38F600A6DE4FDBB5FF786D7F91AD3 /* UIImage+ARGB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ARGB.swift"; path = "SwiftARGB/Classes/UIImage+ARGB.swift"; sourceTree = "<group>"; };
+		BB85FA180572B0971FCC9F5CEF52F003 /* Device-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Device-dummy.m"; sourceTree = "<group>"; };
+		BC688A1DD980B00EC3B50AF646765FA0 /* UIViewKVO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewKVO-prefix.pch"; sourceTree = "<group>"; };
+		BD56004491D634C92DE8AC874D1AB2C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE42BACCB4FB3A7F58BFC1C1D42E64B2 /* AssetsPickerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AssetsPickerViewController.framework; path = AssetsPickerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01AB1516C7D6C83F6D0DE0545F89E91 /* AssetsGuideView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsGuideView.swift; path = AssetsPickerViewController/Classes/Picker/View/AssetsGuideView.swift; sourceTree = "<group>"; };
+		C07569A50DF3B5E7D3F566971F1AC357 /* Pods-DollyAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DollyAppTests.modulemap"; sourceTree = "<group>"; };
+		C0AF9576B29A1B389717678924B68196 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		C111F5EEBECE6C544A30964E098B64B9 /* String+AssetsPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+AssetsPickerViewController.swift"; path = "AssetsPickerViewController/Classes/Utility/String+AssetsPickerViewController.swift"; sourceTree = "<group>"; };
+		C75A446FEAD781B3C3A3D3EC6AFFE08B /* Bundle+AssetsPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+AssetsPickerViewController.swift"; path = "AssetsPickerViewController/Classes/Utility/Bundle+AssetsPickerViewController.swift"; sourceTree = "<group>"; };
+		C9AB37A5B8555E489C720D6A41BA1BFE /* ResourceBundle-AssetsPickerViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AssetsPickerViewController-Info.plist"; sourceTree = "<group>"; };
+		CEF96BC472157D949750AE491BD716FD /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = AssetsPickerViewController/Assets/ko.lproj; sourceTree = "<group>"; };
+		D1413E3F58DFEE38F56E2E733F55AE89 /* Pods-DollyAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DollyAppTests-umbrella.h"; sourceTree = "<group>"; };
+		D2307A065F103DB44DBE79A0E057B884 /* AssetsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsManager.swift; path = AssetsPickerViewController/Classes/Assets/AssetsManager.swift; sourceTree = "<group>"; };
+		D4644584D82CAA24AC36C99A905363BE /* AssetsNoPermissionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsNoPermissionView.swift; path = AssetsPickerViewController/Classes/Photo/View/AssetsNoPermissionView.swift; sourceTree = "<group>"; };
+		D4899ABF794F0BD0614D551DC7A7702D /* AssetsPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsPickerViewController.swift; path = AssetsPickerViewController/Classes/Picker/Controller/AssetsPickerViewController.swift; sourceTree = "<group>"; };
+		D5FB13D65DB9BEC179F09B0942AA9A56 /* Dimmer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dimmer-dummy.m"; sourceTree = "<group>"; };
+		D7051796F9F65A2E90C70CE96C15020F /* Pods-DollyAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DollyAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D780740003383CB4ECC68DE1F3351A31 /* UIViewController+Dimmer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Dimmer.swift"; path = "Dimmer/Classes/UIViewController+Dimmer.swift"; sourceTree = "<group>"; };
+		D8FEA3822B77EA7C0F5A82B1366F5A3D /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		DA1674D04EAFD398BD7FD087DF4E5869 /* Device.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Device.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA438F5489BFDFE2C1B31A8675E3C821 /* NumberFormatter+AssetsPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NumberFormatter+AssetsPickerViewController.swift"; path = "AssetsPickerViewController/Classes/Utility/NumberFormatter+AssetsPickerViewController.swift"; sourceTree = "<group>"; };
+		DD66E77D0F288257371725D3E51DBBEE /* AssetsPickerViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AssetsPickerViewController.bundle; path = "AssetsPickerViewController-AssetsPickerViewController.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE27144EC265859261E7F96CFCE4BB9F /* Dimmer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dimmer.modulemap; sourceTree = "<group>"; };
+		DF7B3308F38BE901CC7FCE06F910A438 /* UIView+Fade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Fade.swift"; path = "FadeView/Classes/UIView+Fade.swift"; sourceTree = "<group>"; };
+		E813BDC70D965595B40368965D36C4D4 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = AssetsPickerViewController/Assets/fr.lproj; sourceTree = "<group>"; };
+		EC1F7B1F2EA6E164087896245E888934 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = AssetsPickerViewController/Assets/tr.lproj; sourceTree = "<group>"; };
+		ECB412E480B7E498EC2E7B668F496BF0 /* AssetsPickerViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssetsPickerViewController-umbrella.h"; sourceTree = "<group>"; };
+		EDF5C88992AF360D4656A610EE5DFBCA /* AssetsAlbumLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsAlbumLayout.swift; path = AssetsPickerViewController/Classes/Album/View/AssetsAlbumLayout.swift; sourceTree = "<group>"; };
+		F0CC25EDF5052B8225E20F1E47F42A4F /* Pods-DollyAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DollyAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2713390439855D3B23AF7DD1710D3D6 /* Dimmer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dimmer-umbrella.h"; sourceTree = "<group>"; };
+		F2F3DA411A35CC2AD751201E4B879A04 /* SSCheckMark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSCheckMark.swift; path = AssetsPickerViewController/Classes/Picker/View/SSCheckMark.swift; sourceTree = "<group>"; };
+		F3C2BAE01984E6921583BBA71C57EBD6 /* AssetsAlbumCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsAlbumCell.swift; path = AssetsPickerViewController/Classes/Album/View/AssetsAlbumCell.swift; sourceTree = "<group>"; };
+		F54EE603A029428B4B367706FCE1B3CD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F63BC6574788B26C9865F530AF943B25 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		F66A2536CCFE264A2B70B06C5796E47C /* Pods-DollyAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DollyAppUITests.modulemap"; sourceTree = "<group>"; };
+		F77D6FE79C5AF077C5232B440EE3F21E /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Source/Size.swift; sourceTree = "<group>"; };
+		F7FCE06A208E5116DC017E9FA699994B /* UIImage+Alpha.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Alpha.swift"; path = "SwiftARGB/Classes/UIImage+Alpha.swift"; sourceTree = "<group>"; };
+		F84FE312569EE250170741810542F117 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		F972B30A505015C47596ACFD55F78046 /* AssetsPhotoCellOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetsPhotoCellOverlay.swift; path = AssetsPickerViewController/Classes/Photo/View/AssetsPhotoCellOverlay.swift; sourceTree = "<group>"; };
+		F9747D95C6D752C1F3D27FBF6A95DD6B /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = AssetsPickerViewController/Assets/ja.lproj; sourceTree = "<group>"; };
+		FB2DAA0CEBCC70C1EE7D3602C27498B9 /* TinyLog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TinyLog.swift; path = TinyLog/Classes/TinyLog.swift; sourceTree = "<group>"; };
+		FE7F01F3F644436A51E4EF6C394080E0 /* Pods-DollyApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DollyApp-dummy.m"; sourceTree = "<group>"; };
+		FEB1A1DE37E19536C4D762B574C12B07 /* FadeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FadeView.framework; path = FadeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11808744404AB23AD5AA64020E65F854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5396F05B2B6E0D3C1901BDA0958B098F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29A5311809C59BA3D9167B5B3071C48C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544D062063F08B31447C06E042AE29E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B48FFD45CD5956F5A92D681F58744A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7FE3CEBAF9AE83BD37AD049A8476B7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0B3D48DBA3970C1B3674A1D4F48138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA43E9EEBE5CE83FE145F0B842161E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6970F5C6BDEAE03482CFF1AB232F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F77BC22732E8B89EA11959CF80C73B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0E1FDC8C219F7A20D84CEA24D2F086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B523A484A553351ADBD2B32B828CD176 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		649C65F2C49A70724B3B19B9021AFC8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB35DC7CDC6F60DB220B573C8220893 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AF555807515BA9232D624630541DF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7188247AE56E04060C8F09CE5DC97B7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85B9705E8A008585F616E9F378C75FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E233080E61741D6397E489109E9B25 /* FadeView.framework in Frameworks */,
+				9AA9CB28DD456FF98855981E4D6B551A /* Foundation.framework in Frameworks */,
+				3D2E6955FF19EA74232220C37E761344 /* PureLayout.framework in Frameworks */,
+				5A75B381A6E395D6701F35683E2E23C1 /* TinyLog.framework in Frameworks */,
+				198FD715071B87880E889283C787A06E /* UIViewKVO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E6D355895ED40DAF4796CB86A88BA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEA90B7867B0C6F484EAB5B36D1E63F /* Device.framework in Frameworks */,
+				EB992E835F0E65DA4E5C6C5E26AE470A /* Dimmer.framework in Frameworks */,
+				95CE48737BCAF67262F4914ECEB052CF /* FadeView.framework in Frameworks */,
+				B5BAA9D652C66BDA25C12997BCF337D9 /* Foundation.framework in Frameworks */,
+				0466118A30BA22A951CD16E4BB1FD17C /* PureLayout.framework in Frameworks */,
+				3C468F7D9F2E53582C27775330FA02A9 /* SwiftARGB.framework in Frameworks */,
+				6ACAED1159E99F154408CD25B7562FEC /* TinyLog.framework in Frameworks */,
+				C1FF1EA3D5A4047F505D612FCE379E2C /* UIViewKVO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80CCFDEA87F6AA4B3DB08A95ACD0DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BDE7141F23491FB9A64B95337C930D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB340DF079BC0425047E677CFF78FC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D56FA65078EB862916C80C0ACF1E096 /* TinyLog */ = {
+			isa = PBXGroup;
+			children = (
+				FB2DAA0CEBCC70C1EE7D3602C27498B9 /* TinyLog.swift */,
+				145F2AF3E58BC3BF23A71B0E2A13E100 /* Support Files */,
+			);
+			name = TinyLog;
+			path = TinyLog;
+			sourceTree = "<group>";
+		};
+		145F2AF3E58BC3BF23A71B0E2A13E100 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD56004491D634C92DE8AC874D1AB2C3 /* Info.plist */,
+				0D71F326840DD09A30289C03B77CD18B /* TinyLog.modulemap */,
+				3CE8343052CC120808DA57BEDA4C0645 /* TinyLog.xcconfig */,
+				0865CB687502449E200CD275168F7B53 /* TinyLog-dummy.m */,
+				9E960BF765544149D09CF41D0FC321C5 /* TinyLog-prefix.pch */,
+				213A0320DFEA3982FA9797F2C1B84C61 /* TinyLog-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TinyLog";
+			sourceTree = "<group>";
+		};
+		4575C38314F7E39C69EDC2DBB8F2E995 /* FadeView */ = {
+			isa = PBXGroup;
+			children = (
+				DF7B3308F38BE901CC7FCE06F910A438 /* UIView+Fade.swift */,
+				AF51BB0D67E1CF1ECD03A9055D8DF4D4 /* Support Files */,
+			);
+			name = FadeView;
+			path = FadeView;
+			sourceTree = "<group>";
+		};
+		4849DF47F44BA291A347021E53B81AB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA1674D04EAFD398BD7FD087DF4E5869 /* Device.framework */,
+				34336419B257FA635A010569113D520A /* Dimmer.framework */,
+				254F0A0B34608CFDA22E2D251A3C79B6 /* FadeView.framework */,
+				50AD2259059A84C93E105C89E12C283A /* PureLayout.framework */,
+				0813B7E3352AB0B2DE307E5C1C6012BD /* SwiftARGB.framework */,
+				99C01670DD4E7EF60D386D7A2565B2A2 /* TinyLog.framework */,
+				6B424683649A73BAAAEFA1BFA906EEC4 /* UIViewKVO.framework */,
+				4ADA5BFB319D1E63B95EB3D27797D6DD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4940F91A1C21EED108B9F872970C1A2D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5293A36F96D8E488F04CBAD789612937 /* Pods-DollyApp */,
+				862600937165AECF05CE46541DC145ED /* Pods-DollyAppTests */,
+				B9263E3A3B0D9EF4651ECE3A141EF0DC /* Pods-DollyAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4ADA5BFB319D1E63B95EB3D27797D6DD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0E3A2D60BAFE4FB8B9526B7D3B664CDE /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5063C50E9A59A5A409C0C0B277E1B9BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D6BEC7B9611FF719E6DD802C4850689 /* Info.plist */,
+				F63BC6574788B26C9865F530AF943B25 /* PureLayout.modulemap */,
+				48371A3B96BAAA4F491ECE17E7743206 /* PureLayout.xcconfig */,
+				5554B413F83DD9481101CC6042A7A21F /* PureLayout-dummy.m */,
+				41E046B56D40E3AEC67A053887F29079 /* PureLayout-prefix.pch */,
+				C0AF9576B29A1B389717678924B68196 /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		5293A36F96D8E488F04CBAD789612937 /* Pods-DollyApp */ = {
+			isa = PBXGroup;
+			children = (
+				A8BF08F329E96C84A7A34555EC8F9B92 /* Info.plist */,
+				7CBED8E763E3D2D4D10D5D4356C1A4B9 /* Pods-DollyApp.modulemap */,
+				582B04AB49E7C28F7179193B56B04D2E /* Pods-DollyApp-acknowledgements.markdown */,
+				1B21E555101AB9A9BBD1E9C252387D2B /* Pods-DollyApp-acknowledgements.plist */,
+				FE7F01F3F644436A51E4EF6C394080E0 /* Pods-DollyApp-dummy.m */,
+				7EDE19FFC61AE98F89A708FBC9616CF5 /* Pods-DollyApp-frameworks.sh */,
+				9009B30CB9B42F4C55F1EB8F02A17AC6 /* Pods-DollyApp-resources.sh */,
+				0EA438AD322EB357172972DDC0830355 /* Pods-DollyApp-umbrella.h */,
+				A875B8DBB38152D1E8C12FE4F642A6BE /* Pods-DollyApp.debug.xcconfig */,
+				916885D4A7633BF7A34EE0DEEADACC69 /* Pods-DollyApp.release.xcconfig */,
+			);
+			name = "Pods-DollyApp";
+			path = "Target Support Files/Pods-DollyApp";
+			sourceTree = "<group>";
+		};
+		5958EC1A8D26031657602ACA9BAA66AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F54EE603A029428B4B367706FCE1B3CD /* Info.plist */,
+				2649063461F8DB27E59A1F85184FD38D /* SwiftARGB.modulemap */,
+				0A07EB6D34C654CEA353EFEDFC57CD3B /* SwiftARGB.xcconfig */,
+				4FF60C29258C7D6195E0BDDD105BA41A /* SwiftARGB-dummy.m */,
+				AB8AE281926A4F8A6A44BFC7A4D8FEB3 /* SwiftARGB-prefix.pch */,
+				5CB3716FB7408388943415B2DE5DF8FE /* SwiftARGB-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftARGB";
+			sourceTree = "<group>";
+		};
+		5F928750B99AB21DC5B66A8E2FF31B37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE4F3E9B0281746902DC4B15ABDC2DE9 /* AssetsPickerViewController */,
+				F4CFB0257D9D81F809341D074630F0EE /* Device */,
+				FAB47CBA58961564C49A244BE441DA89 /* Dimmer */,
+				4575C38314F7E39C69EDC2DBB8F2E995 /* FadeView */,
+				DE777891A01E4A9012ADEBF912C5FD94 /* PureLayout */,
+				EC940603FCC38E48D17C4809146389EF /* SwiftARGB */,
+				0D56FA65078EB862916C80C0ACF1E096 /* TinyLog */,
+				A1582476E8519C4ED5EBE0E9B6E6B444 /* UIViewKVO */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D21FB867E91CC4E084043EDA00A5A14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD66E77D0F288257371725D3E51DBBEE /* AssetsPickerViewController.bundle */,
+				BE42BACCB4FB3A7F58BFC1C1D42E64B2 /* AssetsPickerViewController.framework */,
+				A1C203DFA4CA41B33DB853AB3A9775AF /* Device.framework */,
+				A17E8A2170A3A81A144D01C0218C9402 /* Dimmer.framework */,
+				FEB1A1DE37E19536C4D762B574C12B07 /* FadeView.framework */,
+				6D0FCD0EDE48EB960B011149FB3C5F5F /* Pods_DollyApp.framework */,
+				1DC679A61ADD72E175EAE2FE7979D5CE /* Pods_DollyAppTests.framework */,
+				A71E5714A146116A76B2883750334678 /* Pods_DollyAppUITests.framework */,
+				9159CD773E9F575BD00590BB71827D32 /* PureLayout.framework */,
+				05EF84263D76EF61B1340FAB6F90E751 /* SwiftARGB.framework */,
+				3E810C3200C2EC4546E5BA4DEECC4542 /* TinyLog.framework */,
+				301038D7C1E62DEC4781736D145025A4 /* UIViewKVO.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D656B29AD0E7EFA9EAD6EA1E2564CD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C69615467FDCE1237F183E5D9CEE3C2 /* Device.modulemap */,
+				1100858C98F384BBBF3B5100848D449E /* Device.xcconfig */,
+				BB85FA180572B0971FCC9F5CEF52F003 /* Device-dummy.m */,
+				506F3C14FA48728CE84D54E305354567 /* Device-prefix.pch */,
+				133412A4BF816FB8BC4DE64CFAEDEE3A /* Device-umbrella.h */,
+				04871B0C8F54FAF49262C19FA1CA231B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Device";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4849DF47F44BA291A347021E53B81AB9 /* Frameworks */,
+				5F928750B99AB21DC5B66A8E2FF31B37 /* Pods */,
+				6D21FB867E91CC4E084043EDA00A5A14 /* Products */,
+				4940F91A1C21EED108B9F872970C1A2D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		824FBCF47D2F90E5CCCAA367A81E3BB6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				891F0C5BBF9E12FA90D0A407057E5715 /* AssetsPickerViewController.modulemap */,
+				3CB630B7850A4E1FD7FE2CA93FBD0B35 /* AssetsPickerViewController.xcconfig */,
+				B1CB433BA2CC63E49F747F0CC29B4350 /* AssetsPickerViewController-dummy.m */,
+				17803FD6D5299129C7F31BDF906A1137 /* AssetsPickerViewController-prefix.pch */,
+				ECB412E480B7E498EC2E7B668F496BF0 /* AssetsPickerViewController-umbrella.h */,
+				AE0D8E32EBC5D331A767C0B09B4E33F1 /* Info.plist */,
+				C9AB37A5B8555E489C720D6A41BA1BFE /* ResourceBundle-AssetsPickerViewController-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AssetsPickerViewController";
+			sourceTree = "<group>";
+		};
+		862600937165AECF05CE46541DC145ED /* Pods-DollyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A3899AC15066EEE8E00FEC4763185E9 /* Info.plist */,
+				C07569A50DF3B5E7D3F566971F1AC357 /* Pods-DollyAppTests.modulemap */,
+				110157C1638A9A5DF8210EDDED5E874A /* Pods-DollyAppTests-acknowledgements.markdown */,
+				12AC68B6CEBFCD5A7EBD6912D8BD517F /* Pods-DollyAppTests-acknowledgements.plist */,
+				50C01F355B9146B6EFA8129A9B7FDF8B /* Pods-DollyAppTests-dummy.m */,
+				6710F9B2DFF10AB1154B48E30CEAB2CA /* Pods-DollyAppTests-frameworks.sh */,
+				840D1E19B791B7AAA10BE9339CE0092F /* Pods-DollyAppTests-resources.sh */,
+				D1413E3F58DFEE38F56E2E733F55AE89 /* Pods-DollyAppTests-umbrella.h */,
+				07A3F006CE9CB329A56DBE25EB517C85 /* Pods-DollyAppTests.debug.xcconfig */,
+				17590EDC1796C5750CB226B5AC7CFB6E /* Pods-DollyAppTests.release.xcconfig */,
+			);
+			name = "Pods-DollyAppTests";
+			path = "Target Support Files/Pods-DollyAppTests";
+			sourceTree = "<group>";
+		};
+		A1582476E8519C4ED5EBE0E9B6E6B444 /* UIViewKVO */ = {
+			isa = PBXGroup;
+			children = (
+				26817688D25A804D4FFC2EB1DAC346CE /* UIView+KVO.swift */,
+				C7A1DABDC6A05876B1FE58E77B290617 /* Support Files */,
+			);
+			name = UIViewKVO;
+			path = UIViewKVO;
+			sourceTree = "<group>";
+		};
+		AF51BB0D67E1CF1ECD03A9055D8DF4D4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AFB84659A9C23B3CD7927CD6F7C709C /* FadeView.modulemap */,
+				3A48D6B660FB6D9E25A7EA57B7A815FE /* FadeView.xcconfig */,
+				93246E09AFBC68F8C1C7650E7EC31A9F /* FadeView-dummy.m */,
+				3C25AA98EB4126C6613C552C64AE43D0 /* FadeView-prefix.pch */,
+				6F3EF265EC147CC10114C7900C6FA9C4 /* FadeView-umbrella.h */,
+				68A5FEC927ED0270FFB02EAAE831773A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FadeView";
+			sourceTree = "<group>";
+		};
+		B9263E3A3B0D9EF4651ECE3A141EF0DC /* Pods-DollyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AF7630082DF0A1F311370825828731C /* Info.plist */,
+				F66A2536CCFE264A2B70B06C5796E47C /* Pods-DollyAppUITests.modulemap */,
+				F0CC25EDF5052B8225E20F1E47F42A4F /* Pods-DollyAppUITests-acknowledgements.markdown */,
+				2C27489A77114FE6509011897FC03268 /* Pods-DollyAppUITests-acknowledgements.plist */,
+				653E25AFC0206AA90E09327047FB0305 /* Pods-DollyAppUITests-dummy.m */,
+				D7051796F9F65A2E90C70CE96C15020F /* Pods-DollyAppUITests-frameworks.sh */,
+				88407480BBDD6B14E957C7585FC72E24 /* Pods-DollyAppUITests-resources.sh */,
+				0A02E552BF6810949F667295090CCED7 /* Pods-DollyAppUITests-umbrella.h */,
+				98EECE06B366095827E8A21202F0BAE3 /* Pods-DollyAppUITests.debug.xcconfig */,
+				A57EF3EC1C49C10248D166F7BA1173EA /* Pods-DollyAppUITests.release.xcconfig */,
+			);
+			name = "Pods-DollyAppUITests";
+			path = "Target Support Files/Pods-DollyAppUITests";
+			sourceTree = "<group>";
+		};
+		C7A1DABDC6A05876B1FE58E77B290617 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6184F13ECDE89F5FF680CFDC8C182CE7 /* Info.plist */,
+				05D32B9EB4B37F2B095F7828B5E12436 /* UIViewKVO.modulemap */,
+				03B01145E1B0E6B092E25D2BF43C30DE /* UIViewKVO.xcconfig */,
+				7EBAB8481522AEDB95DFB2DA4FCD13E8 /* UIViewKVO-dummy.m */,
+				BC688A1DD980B00EC3B50AF646765FA0 /* UIViewKVO-prefix.pch */,
+				7DE76A8984B3916E7D4E611AF626BCCB /* UIViewKVO-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIViewKVO";
+			sourceTree = "<group>";
+		};
+		DDD85F62EBDA46CFA2AC1146A6FE8F6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BF94D6F59FCD3322343B16C21AE3959 /* ar.lproj */,
+				34CF89B6F820E523932D0BF4C10B49C6 /* de.lproj */,
+				2E98BDA5D398CA9D9A079C1351B8C385 /* en.lproj */,
+				3E894C1CAD6664AA155A2FBF3C044568 /* es.lproj */,
+				A84B2434EE31217B3F775B6C233F93E2 /* es-MX.lproj */,
+				E813BDC70D965595B40368965D36C4D4 /* fr.lproj */,
+				A28083B5AF176539D5B55E7E3A83918D /* hi-IN.lproj */,
+				83CE954ED23451C965A9396C8E3302B8 /* id.lproj */,
+				F9747D95C6D752C1F3D27FBF6A95DD6B /* ja.lproj */,
+				CEF96BC472157D949750AE491BD716FD /* ko.lproj */,
+				5FFCCAED936B53408C938F601C7D50AF /* ru.lproj */,
+				EC1F7B1F2EA6E164087896245E888934 /* tr.lproj */,
+				4663C631771824CD7690C27E4998FAE0 /* zh-Hans.lproj */,
+				5292D0D4918AD2C9BEF32392B5AFB1A9 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DE4F3E9B0281746902DC4B15ABDC2DE9 /* AssetsPickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2BAE01984E6921583BBA71C57EBD6 /* AssetsAlbumCell.swift */,
+				1DD7E3920EF58267F638456FE908207F /* AssetsAlbumHeaderView.swift */,
+				EDF5C88992AF360D4656A610EE5DFBCA /* AssetsAlbumLayout.swift */,
+				2739AF6954FB695CD2414DCBA55A1334 /* AssetsAlbumTitleView.swift */,
+				A5464C17FF46163D3981D0539C6065A6 /* AssetsAlbumViewController.swift */,
+				1B03ED645898BDC5CC517D94C720A704 /* AssetsCropViewController.swift */,
+				501796AAC98576484D049BB7ACB4F189 /* AssetsEmptyView.swift */,
+				043362364C07BFFF810A99BDC55F93B5 /* AssetsFooterView.swift */,
+				C01AB1516C7D6C83F6D0DE0545F89E91 /* AssetsGuideView.swift */,
+				D2307A065F103DB44DBE79A0E057B884 /* AssetsManager.swift */,
+				550C4950D187FD728439B1D8EA9705D7 /* AssetsManager+Sync.swift */,
+				D4644584D82CAA24AC36C99A905363BE /* AssetsNoPermissionView.swift */,
+				84B11A977158F428210243420F7DA769 /* AssetsPhotoCell.swift */,
+				F972B30A505015C47596ACFD55F78046 /* AssetsPhotoCellOverlay.swift */,
+				A7B478AA9F7387C307B8C010EC867DAA /* AssetsPhotoLayout.swift */,
+				8C73ED65A430ED601D6A4CD10B21FF10 /* AssetsPhotoViewController.swift */,
+				121B5113A71792B8C63C96ACECA7B194 /* AssetsPickerConfig.swift */,
+				D4899ABF794F0BD0614D551DC7A7702D /* AssetsPickerViewController.swift */,
+				B3B192749F932D79971EB075FBDD3F2C /* AssetsPreviewController.swift */,
+				AFA4D2891D2ECDBFAF90B7426090B02E /* AssetsUtility.swift */,
+				C75A446FEAD781B3C3A3D3EC6AFFE08B /* Bundle+AssetsPickerViewController.swift */,
+				3EE3176019E712B8B9167A014E4A4D39 /* Device+AssetsPickerViewController.swift */,
+				DA438F5489BFDFE2C1B31A8675E3C821 /* NumberFormatter+AssetsPickerViewController.swift */,
+				626240C3636FFFFA0A70261CD0C76023 /* PanoramaIconView.swift */,
+				F2F3DA411A35CC2AD751201E4B879A04 /* SSCheckMark.swift */,
+				C111F5EEBECE6C544A30964E098B64B9 /* String+AssetsPickerViewController.swift */,
+				18ED887CD3A93977172D9F3EAC6DD2F8 /* UIFont+AssetsPickerViewController.swift */,
+				1B194812E4D059F6DF2B38B9E0795265 /* UIScreen+AssetsPickerViewController.swift */,
+				DDD85F62EBDA46CFA2AC1146A6FE8F6E /* Resources */,
+				824FBCF47D2F90E5CCCAA367A81E3BB6 /* Support Files */,
+			);
+			name = AssetsPickerViewController;
+			path = AssetsPickerViewController;
+			sourceTree = "<group>";
+		};
+		DE777891A01E4A9012ADEBF912C5FD94 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D8FEA3822B77EA7C0F5A82B1366F5A3D /* ALView+PureLayout.h */,
+				F84FE312569EE250170741810542F117 /* ALView+PureLayout.m */,
+				30C90371AA705AFCAEEAEE8A79AF2A2E /* NSArray+PureLayout.h */,
+				4EE9E7D8C2D4132B2AA661E7729166A9 /* NSArray+PureLayout.m */,
+				04B58D5372BAB769445C971BE3F87048 /* NSLayoutConstraint+PureLayout.h */,
+				0EF194F2132E8A11FD16B2591E44D232 /* NSLayoutConstraint+PureLayout.m */,
+				60666412230FE52FCCC58A1BEE98DCFA /* PureLayout.h */,
+				9D65C9100EB57B669ACC566FDAA8DC53 /* PureLayout+Internal.h */,
+				476D9420DE6C024E1077F7037A900DCF /* PureLayoutDefines.h */,
+				5063C50E9A59A5A409C0C0B277E1B9BA /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		EC940603FCC38E48D17C4809146389EF /* SwiftARGB */ = {
+			isa = PBXGroup;
+			children = (
+				4860A65993EFBBD3641B4AD968D8492E /* UIColor+ARGB.swift */,
+				F7FCE06A208E5116DC017E9FA699994B /* UIImage+Alpha.swift */,
+				B3D38F600A6DE4FDBB5FF786D7F91AD3 /* UIImage+ARGB.swift */,
+				5958EC1A8D26031657602ACA9BAA66AD /* Support Files */,
+			);
+			name = SwiftARGB;
+			path = SwiftARGB;
+			sourceTree = "<group>";
+		};
+		EF707B559F24B26EB0A72A82637E9970 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE27144EC265859261E7F96CFCE4BB9F /* Dimmer.modulemap */,
+				09CFF7A06C7F0481573D269F7517E51A /* Dimmer.xcconfig */,
+				D5FB13D65DB9BEC179F09B0942AA9A56 /* Dimmer-dummy.m */,
+				7D04E76C8C9F9F94C21B1BF472523DB4 /* Dimmer-prefix.pch */,
+				F2713390439855D3B23AF7DD1710D3D6 /* Dimmer-umbrella.h */,
+				2489FB0E15079E5C84B647D894A0FF15 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Dimmer";
+			sourceTree = "<group>";
+		};
+		F4CFB0257D9D81F809341D074630F0EE /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				4BEC5DC5F72AC85260CE74032CFC189C /* Device.swift */,
+				F77D6FE79C5AF077C5232B440EE3F21E /* Size.swift */,
+				80B426B2F9568C5887BE838242FB449D /* Type.swift */,
+				3EDA5E85AA35A604E9A4D2A71E9F6C1E /* Version.swift */,
+				6D656B29AD0E7EFA9EAD6EA1E2564CD4 /* Support Files */,
+			);
+			name = Device;
+			path = Device;
+			sourceTree = "<group>";
+		};
+		FAB47CBA58961564C49A244BE441DA89 /* Dimmer */ = {
+			isa = PBXGroup;
+			children = (
+				13F61737D1B2EAFDB752D725BBFBF654 /* UIView+Dimmer.swift */,
+				D780740003383CB4ECC68DE1F3351A31 /* UIViewController+Dimmer.swift */,
+				EF707B559F24B26EB0A72A82637E9970 /* Support Files */,
+			);
+			name = Dimmer;
+			path = Dimmer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14005785F29F90BDAC8F3296D5561B06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77795B0E992A61F63C3F372973B36C7A /* SwiftARGB-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1481735AC9477FA91CEB5C6DBDA08B83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7842DCAFDE602BFD84B6A36F118ADB4B /* Pods-DollyAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B51ECE1CCF9FABFE492072AAB04D4D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C57709456E7AAA6E8AE0C2D0F47A536 /* UIViewKVO-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CEA99947BE49CDAD17095E61053CC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4830B9566DFF5B0DD44F24ADD0B4359 /* Dimmer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA082DFEBE504241ED49215A8FFA5AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BF834EC3947B4531A3C2440FFA7484 /* Device-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7743A6CB258964A14E49C41B670333DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62DFA56B7FBBE5D6577CD0ECE30B3F0E /* FadeView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F67B6A566300F5C1766D753BAC32792 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBF0C2613570BC06E9C48423E2E3BE81 /* ALView+PureLayout.h in Headers */,
+				F2F76BD2AE605EBFDFF1BF98DBDC446E /* NSArray+PureLayout.h in Headers */,
+				01F031E2F77B138623BCAD75C0972B58 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				0ABD12E7B613BC7BC447FE1EA9AAE413 /* PureLayout+Internal.h in Headers */,
+				BA3937E774DADFBEAF952967F2A1D84F /* PureLayout-umbrella.h in Headers */,
+				28A205001605241554E0899E2909A925 /* PureLayout.h in Headers */,
+				0A67A24966B93B2169DB8FC0526A6FF6 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C7771AFA5979328FBAFF23DA01DA6C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F00177FD135C4DF943447F860E794D21 /* Pods-DollyAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18ECEF135329539D5BDC86F3D5C63E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B47B42EF1087ADB748CCACB6F6F90110 /* AssetsPickerViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA1F49C8666B7A92FEFEAD28B4DD49B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5490B3DB1AEB83575CD1317AEF3B331 /* TinyLog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D03D6C6C331657CA2FD51902260C0A3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7F4B283C51491374870EE3D193324D /* Pods-DollyApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EE214E1821DFF50D2F2FE08A754C15B /* AssetsPickerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10D2501BCEEA112C34D0BF0BD6F0DBB8 /* Build configuration list for PBXNativeTarget "AssetsPickerViewController" */;
+			buildPhases = (
+				F6B922AFE098C43A456FE82ABC15E71B /* Sources */,
+				A8E6D355895ED40DAF4796CB86A88BA2 /* Frameworks */,
+				6FB3F9E02E704B113C57460D62FF4A87 /* Resources */,
+				A18ECEF135329539D5BDC86F3D5C63E6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5378DAC3A1C3552C035410CBBDD6CB6 /* PBXTargetDependency */,
+				CFC3EB2F5573C1927738EDE6CEB5C7BA /* PBXTargetDependency */,
+				F2CC3BE7518E6543DCAEEC86232E86A2 /* PBXTargetDependency */,
+				53AF62A8783F23E35DD9F9A0CD651CC2 /* PBXTargetDependency */,
+				6EEF3F03F468703E5DC8EC40A67BCA81 /* PBXTargetDependency */,
+				3BE3272A3AD5C8522DFE5E503F9D3E5D /* PBXTargetDependency */,
+				8582E328EA81E74F23655FAB3B2E203A /* PBXTargetDependency */,
+				DD3C2E3B5C75C8CB032D27F17E3A00E2 /* PBXTargetDependency */,
+			);
+			name = AssetsPickerViewController;
+			productName = AssetsPickerViewController;
+			productReference = BE42BACCB4FB3A7F58BFC1C1D42E64B2 /* AssetsPickerViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4E443A2986DC6AC20EE63E8B1669B2F6 /* Device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D01DF1962E6767E6DCCB560F7ACDACA /* Build configuration list for PBXNativeTarget "Device" */;
+			buildPhases = (
+				5B005146D3926EA713DBC39A9D52343B /* Sources */,
+				F80CCFDEA87F6AA4B3DB08A95ACD0DFD /* Frameworks */,
+				3CA082DFEBE504241ED49215A8FFA5AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Device;
+			productName = Device;
+			productReference = A1C203DFA4CA41B33DB853AB3A9775AF /* Device.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		549C7F1CE1F3AFBAEC52D785E0DE7B24 /* AssetsPickerViewController-AssetsPickerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488CABAB0E326D74CA78045360142CE0 /* Build configuration list for PBXNativeTarget "AssetsPickerViewController-AssetsPickerViewController" */;
+			buildPhases = (
+				B764D8FC80172C0FABBB8976332ED3B7 /* Sources */,
+				FFB340DF079BC0425047E677CFF78FC7 /* Frameworks */,
+				E042575C4A10D066F7D3DABB40F1AFB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AssetsPickerViewController-AssetsPickerViewController";
+			productName = "AssetsPickerViewController-AssetsPickerViewController";
+			productReference = DD66E77D0F288257371725D3E51DBBEE /* AssetsPickerViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5EF247BE7A2EA4965C1B27E9C6106BA1 /* Dimmer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D89E6FF888E7AEE6349778C11E3E69 /* Build configuration list for PBXNativeTarget "Dimmer" */;
+			buildPhases = (
+				C9236028EB3F5408D64A5DE38AA655B4 /* Sources */,
+				85B9705E8A008585F616E9F378C75FE0 /* Frameworks */,
+				20CEA99947BE49CDAD17095E61053CC6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98217EC119F76FB3C90118B69EB51C87 /* PBXTargetDependency */,
+				E01EF3FA0D1AFFF1CDC31B982C040D82 /* PBXTargetDependency */,
+				7DED0EB877B704B17053EE1912794B38 /* PBXTargetDependency */,
+				DA0BE8156C60EC5279E41D19326B85D8 /* PBXTargetDependency */,
+			);
+			name = Dimmer;
+			productName = Dimmer;
+			productReference = A17E8A2170A3A81A144D01C0218C9402 /* Dimmer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A56F4D9B7BFD3C02C88F0B833727D54 /* Pods-DollyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06F35EAFEFCED8B9E2520B04CF6BCACA /* Build configuration list for PBXNativeTarget "Pods-DollyApp" */;
+			buildPhases = (
+				AA3F3969B7086E6E027700D41BCDB555 /* Sources */,
+				6AF555807515BA9232D624630541DF49 /* Frameworks */,
+				D03D6C6C331657CA2FD51902260C0A3E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5304F32F1DDBFAFDBAA304AC31E17064 /* PBXTargetDependency */,
+				ADCEFFFCD3D28D1EFB0F63D953E1A3C0 /* PBXTargetDependency */,
+				AC5AB8C99429FCECB7CEA2DEF7D467CC /* PBXTargetDependency */,
+				8FFFA30427209FD6456285DA2C6E26EB /* PBXTargetDependency */,
+				3BA2041CD6C34B7DF6A9D3C5AD477120 /* PBXTargetDependency */,
+				2B1EFF4B4189F040CDF573A2FF730814 /* PBXTargetDependency */,
+				E75894554D2570D8CE5B7C68D0E30278 /* PBXTargetDependency */,
+				63E7FA95FFD71ADF2D18171DDFA075AD /* PBXTargetDependency */,
+			);
+			name = "Pods-DollyApp";
+			productName = "Pods-DollyApp";
+			productReference = 6D0FCD0EDE48EB960B011149FB3C5F5F /* Pods_DollyApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		828A912DB6B186B1D75BD40B13B865E3 /* Pods-DollyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F102E5B7BCE19CD554362BD5155E6A38 /* Build configuration list for PBXNativeTarget "Pods-DollyAppTests" */;
+			buildPhases = (
+				FA14C4440411850289A39864FB95E6BB /* Sources */,
+				29A5311809C59BA3D9167B5B3071C48C /* Frameworks */,
+				1481735AC9477FA91CEB5C6DBDA08B83 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				298B6DBC649E34B16E9F0594E5CC0B89 /* PBXTargetDependency */,
+			);
+			name = "Pods-DollyAppTests";
+			productName = "Pods-DollyAppTests";
+			productReference = 1DC679A61ADD72E175EAE2FE7979D5CE /* Pods_DollyAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9243F01902F5E3ABAF67FFB72F8A0A66 /* SwiftARGB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055DF9031FCC8431CB7497BBAFD3821A /* Build configuration list for PBXNativeTarget "SwiftARGB" */;
+			buildPhases = (
+				86560F35C4C31D3A266F7990EC27638D /* Sources */,
+				4D0E1FDC8C219F7A20D84CEA24D2F086 /* Frameworks */,
+				14005785F29F90BDAC8F3296D5561B06 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftARGB;
+			productName = SwiftARGB;
+			productReference = 05EF84263D76EF61B1340FAB6F90E751 /* SwiftARGB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0C2086B648783E20C9573C1A26CDA8B /* Pods-DollyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B3AFBDE54D7A47C991597031C945D0C /* Build configuration list for PBXNativeTarget "Pods-DollyAppUITests" */;
+			buildPhases = (
+				BA478D0FA00FA8A8673BE54175D5AA0D /* Sources */,
+				2F0B3D48DBA3970C1B3674A1D4F48138 /* Frameworks */,
+				9C7771AFA5979328FBAFF23DA01DA6C2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD9C67E1D1911BF251B1CD68F63AC40 /* PBXTargetDependency */,
+			);
+			name = "Pods-DollyAppUITests";
+			productName = "Pods-DollyAppUITests";
+			productReference = A71E5714A146116A76B2883750334678 /* Pods_DollyAppUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE04B7EC204AE43FDF05E6A68E30312F /* TinyLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7F14427294834A156441D8952E159E /* Build configuration list for PBXNativeTarget "TinyLog" */;
+			buildPhases = (
+				52B9AC22376DCE6539FDB1A2B4739EA7 /* Sources */,
+				11808744404AB23AD5AA64020E65F854 /* Frameworks */,
+				AFA1F49C8666B7A92FEFEAD28B4DD49B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyLog;
+			productName = TinyLog;
+			productReference = 3E810C3200C2EC4546E5BA4DEECC4542 /* TinyLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DEB5F92AD446F2DEED19DD893A8DD053 /* UIViewKVO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A814A0D0CD302085504F2951638C26 /* Build configuration list for PBXNativeTarget "UIViewKVO" */;
+			buildPhases = (
+				84AE67276EDCAE6AC0ECB7D4BD490DEF /* Sources */,
+				649C65F2C49A70724B3B19B9021AFC8C /* Frameworks */,
+				1B51ECE1CCF9FABFE492072AAB04D4D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIViewKVO;
+			productName = UIViewKVO;
+			productReference = 301038D7C1E62DEC4781736D145025A4 /* UIViewKVO.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8BBC3AD443BBA69BC4968AF4258E63F /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDE4565DDF7A1823EBC82133B9D0476 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				8EA06FB75D3484902BA66B2CD4EEE9B3 /* Sources */,
+				3E6970F5C6BDEAE03482CFF1AB232F8E /* Frameworks */,
+				7F67B6A566300F5C1766D753BAC32792 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 9159CD773E9F575BD00590BB71827D32 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA9CE6BF8FC81CED7AA3E7515D7EA457 /* FadeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90BCF52CD4FC67087A0953A3A6AA8FA6 /* Build configuration list for PBXNativeTarget "FadeView" */;
+			buildPhases = (
+				E61303B62C5A3273DB50568046455332 /* Sources */,
+				2B48FFD45CD5956F5A92D681F58744A1 /* Frameworks */,
+				7743A6CB258964A14E49C41B670333DB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FadeView;
+			productName = FadeView;
+			productReference = FEB1A1DE37E19536C4D762B574C12B07 /* FadeView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6D21FB867E91CC4E084043EDA00A5A14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EE214E1821DFF50D2F2FE08A754C15B /* AssetsPickerViewController */,
+				549C7F1CE1F3AFBAEC52D785E0DE7B24 /* AssetsPickerViewController-AssetsPickerViewController */,
+				4E443A2986DC6AC20EE63E8B1669B2F6 /* Device */,
+				5EF247BE7A2EA4965C1B27E9C6106BA1 /* Dimmer */,
+				FA9CE6BF8FC81CED7AA3E7515D7EA457 /* FadeView */,
+				7A56F4D9B7BFD3C02C88F0B833727D54 /* Pods-DollyApp */,
+				828A912DB6B186B1D75BD40B13B865E3 /* Pods-DollyAppTests */,
+				A0C2086B648783E20C9573C1A26CDA8B /* Pods-DollyAppUITests */,
+				F8BBC3AD443BBA69BC4968AF4258E63F /* PureLayout */,
+				9243F01902F5E3ABAF67FFB72F8A0A66 /* SwiftARGB */,
+				CE04B7EC204AE43FDF05E6A68E30312F /* TinyLog */,
+				DEB5F92AD446F2DEED19DD893A8DD053 /* UIViewKVO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FB3F9E02E704B113C57460D62FF4A87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAAA89D694A80816A1317B252BCEBC2 /* AssetsPickerViewController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E042575C4A10D066F7D3DABB40F1AFB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AA52F21A45B4D0F636ECCCAF1EFAF3 /* ar.lproj in Resources */,
+				2D99D50B1CE2B874369895D79B6F7564 /* de.lproj in Resources */,
+				6261509D3F8AB076010215958D1CDEA8 /* en.lproj in Resources */,
+				8ACB265291A7F09D4F68BD4C02D3F04D /* es-MX.lproj in Resources */,
+				39C788A649DC6B8DE8BA0116C8536D8A /* es.lproj in Resources */,
+				DA3594B11271E515B599EDE5B774FE81 /* fr.lproj in Resources */,
+				78B003AD743BDD3759FFB73E58049CB9 /* hi-IN.lproj in Resources */,
+				F665AA87304C3B48076ECF882B7CCEDD /* id.lproj in Resources */,
+				96E89A4E025C4C5F3375FE5D88C37A67 /* ja.lproj in Resources */,
+				F9902C96CE71B1AFF86EA956D311BCBC /* ko.lproj in Resources */,
+				021C8A00ECAD47DE06E5FDDF43EFBFFE /* ru.lproj in Resources */,
+				711C18DFF8E90CC000AA6956DEBC40D2 /* tr.lproj in Resources */,
+				600F5C4F7C31628E8BFEED4A682759A8 /* zh-Hans.lproj in Resources */,
+				7BD5218115D8AB1A722EF8B13153765B /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52B9AC22376DCE6539FDB1A2B4739EA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF419062B4437A24E4593F3A991B217C /* TinyLog-dummy.m in Sources */,
+				1615441A4989C9475E0EF33484F699D6 /* TinyLog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B005146D3926EA713DBC39A9D52343B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAEE53C88459B7359931EF98C79F53B /* Device-dummy.m in Sources */,
+				BA82A657DCFA4FFAE3EB03591C260D77 /* Device.swift in Sources */,
+				8FE5D521BC85C51FD42BB2F7EFF07AFB /* Size.swift in Sources */,
+				044548B07979DA22091720CC8D9B51E2 /* Type.swift in Sources */,
+				642136708BE23684238152698119D30F /* Version.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AE67276EDCAE6AC0ECB7D4BD490DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EC8FAA493B3C6E76546FA8A05714C6 /* UIView+KVO.swift in Sources */,
+				EF7C0F64319455DFA7142CE02F277E4C /* UIViewKVO-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86560F35C4C31D3A266F7990EC27638D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8573C9C7210CDF30CA67A27DD991883B /* SwiftARGB-dummy.m in Sources */,
+				52C7A1695D79C8C71821F8DB01A427E9 /* UIColor+ARGB.swift in Sources */,
+				0AE9D5B76AAF8FE0EA52E0A70D82A6D7 /* UIImage+Alpha.swift in Sources */,
+				9A50A105C7D6459DD39FF0663FD4CDDD /* UIImage+ARGB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EA06FB75D3484902BA66B2CD4EEE9B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E35C7164AADB5A911A3B901DC460FAD /* ALView+PureLayout.m in Sources */,
+				ECEC7B06FAA68893B15119092212D947 /* NSArray+PureLayout.m in Sources */,
+				BA583804F6A7D5EF03B8C68418D947BC /* NSLayoutConstraint+PureLayout.m in Sources */,
+				3EFF24E20852945376F7FF2251FF17D7 /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3F3969B7086E6E027700D41BCDB555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3705A3C1BA30D76C60513E6E240B13DC /* Pods-DollyApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B764D8FC80172C0FABBB8976332ED3B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA478D0FA00FA8A8673BE54175D5AA0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BBFCA0FF4B2A380BE8FFF757B7FF5E /* Pods-DollyAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9236028EB3F5408D64A5DE38AA655B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5712E06250EBB37952FD7ECACA55212F /* Dimmer-dummy.m in Sources */,
+				35FA8BDDB9791CA57E1998314FEF0101 /* UIView+Dimmer.swift in Sources */,
+				E93E32D30EC85311B9CAFD1CEDAFFBEC /* UIViewController+Dimmer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61303B62C5A3273DB50568046455332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82D218451ECBE0DDE1539220FCF7E7A /* FadeView-dummy.m in Sources */,
+				2CAAC809503651B88FA7359EA5771A7C /* UIView+Fade.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B922AFE098C43A456FE82ABC15E71B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7D098E207F5990C38C21A01E24A0F7 /* AssetsAlbumCell.swift in Sources */,
+				DD7F8E8D1C14C3A1F742CD73EC67A972 /* AssetsAlbumHeaderView.swift in Sources */,
+				96F3A82E36F00ED20974DDCCBEEA5CC3 /* AssetsAlbumLayout.swift in Sources */,
+				B88883DF6C4C39DA49F88069F84DB1C2 /* AssetsAlbumTitleView.swift in Sources */,
+				68BB5E2251EAA02D14997406FF0628BD /* AssetsAlbumViewController.swift in Sources */,
+				6937997B0EF2D2737B61D6F96963DA53 /* AssetsCropViewController.swift in Sources */,
+				FC33828E62D9A14BF11A4D7102B34C2C /* AssetsEmptyView.swift in Sources */,
+				C0225C280961123604AEA38070F664CD /* AssetsFooterView.swift in Sources */,
+				FD43238A1FA176B97640C865CDD76A4A /* AssetsGuideView.swift in Sources */,
+				A5BB7635C5E72047024E4AD3D9E22486 /* AssetsManager+Sync.swift in Sources */,
+				24A4348050F382761BC3685A88D47001 /* AssetsManager.swift in Sources */,
+				417142A8B7A684D9D7DB76A75A43EC75 /* AssetsNoPermissionView.swift in Sources */,
+				7C3F13C4DCBCA5362F55C40D4990E84C /* AssetsPhotoCell.swift in Sources */,
+				B566EF4257575DC92AB3537BE6504B76 /* AssetsPhotoCellOverlay.swift in Sources */,
+				6B813AC62FC3496AEDA96BF50C6FE5ED /* AssetsPhotoLayout.swift in Sources */,
+				5E599EB7AFF9B2366DBFC07493A5D108 /* AssetsPhotoViewController.swift in Sources */,
+				5D07B5A4BBABD4EDF787ECF7816612DD /* AssetsPickerConfig.swift in Sources */,
+				9A4384D38C150A5930BF7A5D329A1AC1 /* AssetsPickerViewController-dummy.m in Sources */,
+				08632E70970F6DC64D8D7A82824C2DD4 /* AssetsPickerViewController.swift in Sources */,
+				43D8E6364C8E17B110F59ABADDAD6101 /* AssetsPreviewController.swift in Sources */,
+				0B4608E0AFFC1408A5621045423B4D62 /* AssetsUtility.swift in Sources */,
+				28FD4436EEB396A995C5419363E0D997 /* Bundle+AssetsPickerViewController.swift in Sources */,
+				9F97F1AC05936CE2ED50DB77896E8F9E /* Device+AssetsPickerViewController.swift in Sources */,
+				5F8C67C45585139E6039B28F48E20C68 /* NumberFormatter+AssetsPickerViewController.swift in Sources */,
+				D1116B236A7F3383C70C30B311978A03 /* PanoramaIconView.swift in Sources */,
+				95DF99EB13C80E952258DE865B5707CF /* SSCheckMark.swift in Sources */,
+				C0724FFFAB3387688A66774AC65C1E6E /* String+AssetsPickerViewController.swift in Sources */,
+				7EDB2D9AD2819190F42780977044E6FA /* UIFont+AssetsPickerViewController.swift in Sources */,
+				0D598B953AA47D701EAAE3AE0B474A8D /* UIScreen+AssetsPickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA14C4440411850289A39864FB95E6BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				861524512532D2607EEAE8E5AA6029A9 /* Pods-DollyAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		298B6DBC649E34B16E9F0594E5CC0B89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DollyApp";
+			target = 7A56F4D9B7BFD3C02C88F0B833727D54 /* Pods-DollyApp */;
+			targetProxy = EE51C852C62AD884EC1D4EAD70A116BA /* PBXContainerItemProxy */;
+		};
+		2B1EFF4B4189F040CDF573A2FF730814 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftARGB;
+			target = 9243F01902F5E3ABAF67FFB72F8A0A66 /* SwiftARGB */;
+			targetProxy = D605C95F4CE03FB122FCF33D1A4350D7 /* PBXContainerItemProxy */;
+		};
+		3BA2041CD6C34B7DF6A9D3C5AD477120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = F8BBC3AD443BBA69BC4968AF4258E63F /* PureLayout */;
+			targetProxy = 635D2C31DCE011A8C0F7892072899136 /* PBXContainerItemProxy */;
+		};
+		3BE3272A3AD5C8522DFE5E503F9D3E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftARGB;
+			target = 9243F01902F5E3ABAF67FFB72F8A0A66 /* SwiftARGB */;
+			targetProxy = 8B50243981D977C796251DBD598EFC88 /* PBXContainerItemProxy */;
+		};
+		3CD9C67E1D1911BF251B1CD68F63AC40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DollyApp";
+			target = 7A56F4D9B7BFD3C02C88F0B833727D54 /* Pods-DollyApp */;
+			targetProxy = 2D29F96839D599E8DAE3FB1833B5D5FB /* PBXContainerItemProxy */;
+		};
+		5304F32F1DDBFAFDBAA304AC31E17064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AssetsPickerViewController;
+			target = 0EE214E1821DFF50D2F2FE08A754C15B /* AssetsPickerViewController */;
+			targetProxy = E3D189A57C893B50F2A033A754A3B5A9 /* PBXContainerItemProxy */;
+		};
+		53AF62A8783F23E35DD9F9A0CD651CC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FadeView;
+			target = FA9CE6BF8FC81CED7AA3E7515D7EA457 /* FadeView */;
+			targetProxy = 1BBBCCD99F45944BD0FC4CEA09505AA0 /* PBXContainerItemProxy */;
+		};
+		63E7FA95FFD71ADF2D18171DDFA075AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIViewKVO;
+			target = DEB5F92AD446F2DEED19DD893A8DD053 /* UIViewKVO */;
+			targetProxy = 95684B592490F333C1741CC5F9F544C5 /* PBXContainerItemProxy */;
+		};
+		6EEF3F03F468703E5DC8EC40A67BCA81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = F8BBC3AD443BBA69BC4968AF4258E63F /* PureLayout */;
+			targetProxy = 45B86A79863400E97134D65D24E8D030 /* PBXContainerItemProxy */;
+		};
+		7DED0EB877B704B17053EE1912794B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyLog;
+			target = CE04B7EC204AE43FDF05E6A68E30312F /* TinyLog */;
+			targetProxy = 60F448A141C5FA7A52C7764086788B45 /* PBXContainerItemProxy */;
+		};
+		8582E328EA81E74F23655FAB3B2E203A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyLog;
+			target = CE04B7EC204AE43FDF05E6A68E30312F /* TinyLog */;
+			targetProxy = 0D4451C74B519CB508EFC749A684F40E /* PBXContainerItemProxy */;
+		};
+		8FFFA30427209FD6456285DA2C6E26EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FadeView;
+			target = FA9CE6BF8FC81CED7AA3E7515D7EA457 /* FadeView */;
+			targetProxy = BD6F3B3BFD165F1E63E1F5957941B334 /* PBXContainerItemProxy */;
+		};
+		98217EC119F76FB3C90118B69EB51C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FadeView;
+			target = FA9CE6BF8FC81CED7AA3E7515D7EA457 /* FadeView */;
+			targetProxy = 3733F928B5AC6F5A98E662581AD958A9 /* PBXContainerItemProxy */;
+		};
+		AC5AB8C99429FCECB7CEA2DEF7D467CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dimmer;
+			target = 5EF247BE7A2EA4965C1B27E9C6106BA1 /* Dimmer */;
+			targetProxy = B86F30823C0614249B8C3C7BE8701836 /* PBXContainerItemProxy */;
+		};
+		ADCEFFFCD3D28D1EFB0F63D953E1A3C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Device;
+			target = 4E443A2986DC6AC20EE63E8B1669B2F6 /* Device */;
+			targetProxy = BCBDDE45C9580D5728A5D8191687260D /* PBXContainerItemProxy */;
+		};
+		CFC3EB2F5573C1927738EDE6CEB5C7BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Device;
+			target = 4E443A2986DC6AC20EE63E8B1669B2F6 /* Device */;
+			targetProxy = 74DBABC20A4F95F9A70C49056E935C40 /* PBXContainerItemProxy */;
+		};
+		D5378DAC3A1C3552C035410CBBDD6CB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AssetsPickerViewController-AssetsPickerViewController";
+			target = 549C7F1CE1F3AFBAEC52D785E0DE7B24 /* AssetsPickerViewController-AssetsPickerViewController */;
+			targetProxy = 06285441ECFB77273C76FDBCBB46D112 /* PBXContainerItemProxy */;
+		};
+		DA0BE8156C60EC5279E41D19326B85D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIViewKVO;
+			target = DEB5F92AD446F2DEED19DD893A8DD053 /* UIViewKVO */;
+			targetProxy = 11D2C3E7D91AA9EEB3A5481CC6700ACB /* PBXContainerItemProxy */;
+		};
+		DD3C2E3B5C75C8CB032D27F17E3A00E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIViewKVO;
+			target = DEB5F92AD446F2DEED19DD893A8DD053 /* UIViewKVO */;
+			targetProxy = 7F0B5E16A337258B328BB8DE58D6CFC5 /* PBXContainerItemProxy */;
+		};
+		E01EF3FA0D1AFFF1CDC31B982C040D82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = F8BBC3AD443BBA69BC4968AF4258E63F /* PureLayout */;
+			targetProxy = 1EB8F112565C7112D2A9850ADF518328 /* PBXContainerItemProxy */;
+		};
+		E75894554D2570D8CE5B7C68D0E30278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TinyLog;
+			target = CE04B7EC204AE43FDF05E6A68E30312F /* TinyLog */;
+			targetProxy = FC0FE537A223B1302CB51CEBB2947C8D /* PBXContainerItemProxy */;
+		};
+		F2CC3BE7518E6543DCAEEC86232E86A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dimmer;
+			target = 5EF247BE7A2EA4965C1B27E9C6106BA1 /* Dimmer */;
+			targetProxy = 9308D9BDD0CA19EB3C88AF59F95F10CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		09BC41C2C80ACA58038A6DCBD9462D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1100858C98F384BBBF3B5100848D449E /* Device.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Device/Device-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Device/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Device/Device.modulemap";
+				PRODUCT_MODULE_NAME = Device;
+				PRODUCT_NAME = Device;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F3885D41A5EB0D31048C556851DC547 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB630B7850A4E1FD7FE2CA93FBD0B35 /* AssetsPickerViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AssetsPickerViewController";
+				INFOPLIST_FILE = "Target Support Files/AssetsPickerViewController/ResourceBundle-AssetsPickerViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = AssetsPickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2A26DB9C5C7527EC71DBE846A99EC472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB630B7850A4E1FD7FE2CA93FBD0B35 /* AssetsPickerViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AssetsPickerViewController/AssetsPickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AssetsPickerViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AssetsPickerViewController/AssetsPickerViewController.modulemap";
+				PRODUCT_MODULE_NAME = AssetsPickerViewController;
+				PRODUCT_NAME = AssetsPickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2E03B5CE44C87F640C24D726CCFC73B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A3F006CE9CB329A56DBE25EB517C85 /* Pods-DollyAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DollyAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DollyAppTests/Pods-DollyAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		376A669B40EE38182640100EB183D9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B01145E1B0E6B092E25D2BF43C30DE /* UIViewKVO.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIViewKVO/UIViewKVO-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIViewKVO/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIViewKVO/UIViewKVO.modulemap";
+				PRODUCT_MODULE_NAME = UIViewKVO;
+				PRODUCT_NAME = UIViewKVO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61E4D92C8FC6770F3C072E42BE345466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98EECE06B366095827E8A21202F0BAE3 /* Pods-DollyAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DollyAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DollyAppUITests/Pods-DollyAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63753BC9E78695D79CC79B6F3D2800AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48371A3B96BAAA4F491ECE17E7743206 /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		686C92F9C77D6CDC529BB3E791405966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A48D6B660FB6D9E25A7EA57B7A815FE /* FadeView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FadeView/FadeView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FadeView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FadeView/FadeView.modulemap";
+				PRODUCT_MODULE_NAME = FadeView;
+				PRODUCT_NAME = FadeView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6EAB99810226CEF74D21AEC4CCFF7B1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE8343052CC120808DA57BEDA4C0645 /* TinyLog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyLog/TinyLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyLog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyLog/TinyLog.modulemap";
+				PRODUCT_MODULE_NAME = TinyLog;
+				PRODUCT_NAME = TinyLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7D86DF5D05AB8775E588543CA388FBE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A07EB6D34C654CEA353EFEDFC57CD3B /* SwiftARGB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftARGB/SwiftARGB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftARGB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftARGB/SwiftARGB.modulemap";
+				PRODUCT_MODULE_NAME = SwiftARGB;
+				PRODUCT_NAME = SwiftARGB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84FB386FBA33D077A30D24BB2758DBE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A57EF3EC1C49C10248D166F7BA1173EA /* Pods-DollyAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DollyAppUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DollyAppUITests/Pods-DollyAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		876B427F9155B01978E9826F7CE8828B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B01145E1B0E6B092E25D2BF43C30DE /* UIViewKVO.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIViewKVO/UIViewKVO-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIViewKVO/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIViewKVO/UIViewKVO.modulemap";
+				PRODUCT_MODULE_NAME = UIViewKVO;
+				PRODUCT_NAME = UIViewKVO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D773CEC659EE070B109709BDEC83213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE8343052CC120808DA57BEDA4C0645 /* TinyLog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TinyLog/TinyLog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TinyLog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TinyLog/TinyLog.modulemap";
+				PRODUCT_MODULE_NAME = TinyLog;
+				PRODUCT_NAME = TinyLog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B084D803F1D0A5CFC4F89A1ACD87124D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB630B7850A4E1FD7FE2CA93FBD0B35 /* AssetsPickerViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AssetsPickerViewController";
+				INFOPLIST_FILE = "Target Support Files/AssetsPickerViewController/ResourceBundle-AssetsPickerViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = AssetsPickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C24CA3A6DD8B4B0E2FC9B84AA94300B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916885D4A7633BF7A34EE0DEEADACC69 /* Pods-DollyApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DollyApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DollyApp/Pods-DollyApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2D4E047E250359C5DBCFA859311A792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CFF7A06C7F0481573D269F7517E51A /* Dimmer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dimmer/Dimmer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dimmer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Dimmer/Dimmer.modulemap";
+				PRODUCT_MODULE_NAME = Dimmer;
+				PRODUCT_NAME = Dimmer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2E669F22322A9D8E308CB771724B38E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48371A3B96BAAA4F491ECE17E7743206 /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				PRODUCT_MODULE_NAME = PureLayout;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E45BFE367E21A4382DE9BF28377CDCB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A875B8DBB38152D1E8C12FE4F642A6BE /* Pods-DollyApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DollyApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DollyApp/Pods-DollyApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBFEFE83F3DC42E4874305F850C190BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A07EB6D34C654CEA353EFEDFC57CD3B /* SwiftARGB.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftARGB/SwiftARGB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftARGB/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftARGB/SwiftARGB.modulemap";
+				PRODUCT_MODULE_NAME = SwiftARGB;
+				PRODUCT_NAME = SwiftARGB;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F01505BBC7D1011B2C90E7A0CA90B305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A48D6B660FB6D9E25A7EA57B7A815FE /* FadeView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FadeView/FadeView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FadeView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FadeView/FadeView.modulemap";
+				PRODUCT_MODULE_NAME = FadeView;
+				PRODUCT_NAME = FadeView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F254FBCDC3F7BD247FFAEA808AE46BA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB630B7850A4E1FD7FE2CA93FBD0B35 /* AssetsPickerViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AssetsPickerViewController/AssetsPickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AssetsPickerViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AssetsPickerViewController/AssetsPickerViewController.modulemap";
+				PRODUCT_MODULE_NAME = AssetsPickerViewController;
+				PRODUCT_NAME = AssetsPickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3943C93EB36D7DC6A6EF5E75C0A3964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17590EDC1796C5750CB226B5AC7CFB6E /* Pods-DollyAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DollyAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DollyAppTests/Pods-DollyAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F39BFF7529096681E3800C199ADCAD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1100858C98F384BBBF3B5100848D449E /* Device.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Device/Device-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Device/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Device/Device.modulemap";
+				PRODUCT_MODULE_NAME = Device;
+				PRODUCT_NAME = Device;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F39D6EE399FD33C1FFD1727A2EC96DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CFF7A06C7F0481573D269F7517E51A /* Dimmer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dimmer/Dimmer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dimmer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Dimmer/Dimmer.modulemap";
+				PRODUCT_MODULE_NAME = Dimmer;
+				PRODUCT_NAME = Dimmer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		055DF9031FCC8431CB7497BBAFD3821A /* Build configuration list for PBXNativeTarget "SwiftARGB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D86DF5D05AB8775E588543CA388FBE6 /* Debug */,
+				EBFEFE83F3DC42E4874305F850C190BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06F35EAFEFCED8B9E2520B04CF6BCACA /* Build configuration list for PBXNativeTarget "Pods-DollyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E45BFE367E21A4382DE9BF28377CDCB3 /* Debug */,
+				C24CA3A6DD8B4B0E2FC9B84AA94300B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDE4565DDF7A1823EBC82133B9D0476 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63753BC9E78695D79CC79B6F3D2800AA /* Debug */,
+				E2E669F22322A9D8E308CB771724B38E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D01DF1962E6767E6DCCB560F7ACDACA /* Build configuration list for PBXNativeTarget "Device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BC41C2C80ACA58038A6DCBD9462D12 /* Debug */,
+				F39BFF7529096681E3800C199ADCAD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10D2501BCEEA112C34D0BF0BD6F0DBB8 /* Build configuration list for PBXNativeTarget "AssetsPickerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A26DB9C5C7527EC71DBE846A99EC472 /* Debug */,
+				F254FBCDC3F7BD247FFAEA808AE46BA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25D89E6FF888E7AEE6349778C11E3E69 /* Build configuration list for PBXNativeTarget "Dimmer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D4E047E250359C5DBCFA859311A792 /* Debug */,
+				F39D6EE399FD33C1FFD1727A2EC96DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A814A0D0CD302085504F2951638C26 /* Build configuration list for PBXNativeTarget "UIViewKVO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				876B427F9155B01978E9826F7CE8828B /* Debug */,
+				376A669B40EE38182640100EB183D9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		488CABAB0E326D74CA78045360142CE0 /* Build configuration list for PBXNativeTarget "AssetsPickerViewController-AssetsPickerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F3885D41A5EB0D31048C556851DC547 /* Debug */,
+				B084D803F1D0A5CFC4F89A1ACD87124D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B3AFBDE54D7A47C991597031C945D0C /* Build configuration list for PBXNativeTarget "Pods-DollyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E4D92C8FC6770F3C072E42BE345466 /* Debug */,
+				84FB386FBA33D077A30D24BB2758DBE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90BCF52CD4FC67087A0953A3A6AA8FA6 /* Build configuration list for PBXNativeTarget "FadeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686C92F9C77D6CDC529BB3E791405966 /* Debug */,
+				F01505BBC7D1011B2C90E7A0CA90B305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7F14427294834A156441D8952E159E /* Build configuration list for PBXNativeTarget "TinyLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D773CEC659EE070B109709BDEC83213 /* Debug */,
+				6EAB99810226CEF74D21AEC4CCFF7B1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F102E5B7BCE19CD554362BD5155E6A38 /* Build configuration list for PBXNativeTarget "Pods-DollyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E03B5CE44C87F640C24D726CCFC73B3 /* Debug */,
+				F3943C93EB36D7DC6A6EF5E75C0A3964 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

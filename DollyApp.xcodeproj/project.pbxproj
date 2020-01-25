@@ -14,6 +14,11 @@
 		0E1D1E0123DBC521008833E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1D1DFF23DBC521008833E3 /* LaunchScreen.storyboard */; };
 		0E1D1E0C23DBC521008833E3 /* DollyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D1E0B23DBC521008833E3 /* DollyAppTests.swift */; };
 		0E1D1E1723DBC521008833E3 /* DollyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D1E1623DBC521008833E3 /* DollyAppUITests.swift */; };
+		0E51978823DBE4290019CF12 /* CustomAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51978723DBE4290019CF12 /* CustomAssetCell.swift */; };
+		0EBC58D523DBC8C300824DBF /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC58D423DBC8C300824DBF /* ImagePickerManager.swift */; };
+		93AD0A9ED72B442497DBD860 /* Pods_DollyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FB1299EC44E60B001EEC6 /* Pods_DollyAppTests.framework */; };
+		B29350F24086BDA2AAD27375 /* Pods_DollyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4744FB8C0E8F8640B2F4C83F /* Pods_DollyAppUITests.framework */; };
+		D17A52FF477AFBD9AA0E00C6 /* Pods_DollyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD3D571845F0152A9ECD78D /* Pods_DollyApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,17 @@
 		0E1D1E1223DBC521008833E3 /* DollyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1D1E1623DBC521008833E3 /* DollyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollyAppUITests.swift; sourceTree = "<group>"; };
 		0E1D1E1823DBC521008833E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E51978723DBE4290019CF12 /* CustomAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAssetCell.swift; sourceTree = "<group>"; };
+		0EBC58D423DBC8C300824DBF /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		1A5CE48FB729259AB78E8E44 /* Pods-DollyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DollyAppUITests/Pods-DollyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2D1FB1299EC44E60B001EEC6 /* Pods_DollyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD3D571845F0152A9ECD78D /* Pods_DollyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4744FB8C0E8F8640B2F4C83F /* Pods_DollyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B636E1766A5F4D571AFEEB4 /* Pods-DollyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DollyApp/Pods-DollyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4C85564A9FFB30C5A6BDCDDB /* Pods-DollyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DollyAppUITests/Pods-DollyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE56811C47937962E519A833 /* Pods-DollyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DollyAppTests/Pods-DollyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8295CC8F16C41C9F83EA014 /* Pods-DollyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DollyApp/Pods-DollyApp.release.xcconfig"; sourceTree = "<group>"; };
+		DF0E37DD9E908ADE88A64707 /* Pods-DollyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DollyAppTests/Pods-DollyAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17A52FF477AFBD9AA0E00C6 /* Pods_DollyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AD0A9ED72B442497DBD860 /* Pods_DollyAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29350F24086BDA2AAD27375 /* Pods_DollyAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				0E1D1E0A23DBC521008833E3 /* DollyAppTests */,
 				0E1D1E1523DBC521008833E3 /* DollyAppUITests */,
 				0E1D1DF423DBC51F008833E3 /* Products */,
+				4CBDE44AA532DD0167395A19 /* Pods */,
+				C9C26D2D52D2D0DC58DDEEE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,8 @@
 			children = (
 				0E1D1DF623DBC51F008833E3 /* AppDelegate.swift */,
 				0E1D1DF823DBC51F008833E3 /* ViewController.swift */,
+				0E51978723DBE4290019CF12 /* CustomAssetCell.swift */,
+				0EBC58D423DBC8C300824DBF /* ImagePickerManager.swift */,
 				0E1D1DFA23DBC51F008833E3 /* Main.storyboard */,
 				0E1D1DFD23DBC521008833E3 /* Assets.xcassets */,
 				0E1D1DFF23DBC521008833E3 /* LaunchScreen.storyboard */,
@@ -125,6 +148,29 @@
 			path = DollyAppUITests;
 			sourceTree = "<group>";
 		};
+		4CBDE44AA532DD0167395A19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B636E1766A5F4D571AFEEB4 /* Pods-DollyApp.debug.xcconfig */,
+				D8295CC8F16C41C9F83EA014 /* Pods-DollyApp.release.xcconfig */,
+				BE56811C47937962E519A833 /* Pods-DollyAppTests.debug.xcconfig */,
+				DF0E37DD9E908ADE88A64707 /* Pods-DollyAppTests.release.xcconfig */,
+				4C85564A9FFB30C5A6BDCDDB /* Pods-DollyAppUITests.debug.xcconfig */,
+				1A5CE48FB729259AB78E8E44 /* Pods-DollyAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9C26D2D52D2D0DC58DDEEE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3D571845F0152A9ECD78D /* Pods_DollyApp.framework */,
+				2D1FB1299EC44E60B001EEC6 /* Pods_DollyAppTests.framework */,
+				4744FB8C0E8F8640B2F4C83F /* Pods_DollyAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E1D1E1B23DBC521008833E3 /* Build configuration list for PBXNativeTarget "DollyApp" */;
 			buildPhases = (
+				380510BEDB155B6102BAC2F0 /* [CP] Check Pods Manifest.lock */,
 				0E1D1DEF23DBC51F008833E3 /* Sources */,
 				0E1D1DF023DBC51F008833E3 /* Frameworks */,
 				0E1D1DF123DBC51F008833E3 /* Resources */,
+				B37F78D24472B4A6CAE48BC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E1D1E1E23DBC521008833E3 /* Build configuration list for PBXNativeTarget "DollyAppTests" */;
 			buildPhases = (
+				4277F50D1F7D2E053F4ADE65 /* [CP] Check Pods Manifest.lock */,
 				0E1D1E0323DBC521008833E3 /* Sources */,
 				0E1D1E0423DBC521008833E3 /* Frameworks */,
 				0E1D1E0523DBC521008833E3 /* Resources */,
@@ -167,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E1D1E2123DBC521008833E3 /* Build configuration list for PBXNativeTarget "DollyAppUITests" */;
 			buildPhases = (
+				A26CDC42ADC461EEB262C97E /* [CP] Check Pods Manifest.lock */,
 				0E1D1E0E23DBC521008833E3 /* Sources */,
 				0E1D1E0F23DBC521008833E3 /* Frameworks */,
 				0E1D1E1023DBC521008833E3 /* Resources */,
@@ -251,6 +301,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		380510BEDB155B6102BAC2F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DollyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4277F50D1F7D2E053F4ADE65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DollyAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26CDC42ADC461EEB262C97E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DollyAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37F78D24472B4A6CAE48BC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DollyApp/Pods-DollyApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AssetsPickerViewController/AssetsPickerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
+				"${BUILT_PRODUCTS_DIR}/Dimmer/Dimmer.framework",
+				"${BUILT_PRODUCTS_DIR}/FadeView/FadeView.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftARGB/SwiftARGB.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyLog/TinyLog.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewKVO/UIViewKVO.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssetsPickerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dimmer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FadeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftARGB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyLog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewKVO.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DollyApp/Pods-DollyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E1D1DEF23DBC51F008833E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +397,8 @@
 			files = (
 				0E1D1DF923DBC51F008833E3 /* ViewController.swift in Sources */,
 				0E1D1DF723DBC51F008833E3 /* AppDelegate.swift in Sources */,
+				0EBC58D523DBC8C300824DBF /* ImagePickerManager.swift in Sources */,
+				0E51978823DBE4290019CF12 /* CustomAssetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +559,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -430,42 +571,47 @@
 		};
 		0E1D1E1C23DBC521008833E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B636E1766A5F4D571AFEEB4 /* Pods-DollyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTPUK589QA;
 				INFOPLIST_FILE = DollyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = joshuaheslinkas.DollyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0E1D1E1D23DBC521008833E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8295CC8F16C41C9F83EA014 /* Pods-DollyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LTPUK589QA;
 				INFOPLIST_FILE = DollyApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = joshuaheslinkas.DollyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		0E1D1E1F23DBC521008833E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE56811C47937962E519A833 /* Pods-DollyAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +633,7 @@
 		};
 		0E1D1E2023DBC521008833E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF0E37DD9E908ADE88A64707 /* Pods-DollyAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +655,7 @@
 		};
 		0E1D1E2223DBC521008833E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C85564A9FFB30C5A6BDCDDB /* Pods-DollyAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +676,7 @@
 		};
 		0E1D1E2323DBC521008833E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A5CE48FB729259AB78E8E44 /* Pods-DollyAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
