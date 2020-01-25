@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         let view = MainView()
         view.styleButton(button: button)
         view.styleSaveButton(button: saveButton)
-        view.styleSaveButton(button: clearButton)
+        view.styleClearButton(button: clearButton)
     
         loadDefaultImages()
         clearButton.isHidden = true
@@ -83,19 +83,23 @@ class ViewController: UIViewController {
         saveButton.isHidden = false
         clearButton.isHidden = false
     }
-    
-    func addImages(images: [UIImage]) {
-        
-        
-        
-        //add lables here
-    }
 
+    let alert = UIAlertController(title: nil, message: "Saving to Library...", preferredStyle: .alert)
     func saveToLibrary(image: UIImage) {
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
+        loadingIndicator.startAnimating();
+        
+        alert.view.addSubview(loadingIndicator)
+        present(alert, animated: true, completion: nil)
+        
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
     @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        alert.dismiss(animated: false, completion: nil)
+        
         if let error = error {
             // we got back an error!
             let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)

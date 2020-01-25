@@ -20,6 +20,12 @@ class MainView {
         button.layer.cornerRadius = button.frame.height / 2
         button.setTitleColor(.white, for: .normal)
     }
+    
+    func styleClearButton(button: UIButton) {
+        button.backgroundColor = UIColor(rgbHex: 0xFF5A5F)
+        button.layer.cornerRadius = button.frame.height / 2
+        button.setTitleColor(.white, for: .normal)
+    }
 
     func addLabelTo(view: UIView, imageView: UIImageView, string: String, x: CGFloat, y: CGFloat) {
         let length = imageView.frame.width
