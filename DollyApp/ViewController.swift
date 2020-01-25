@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     var imageViewThree: UIImageView!
     var imageViewFour: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -31,16 +30,42 @@ class ViewController: UIViewController {
         view.styleButton(button: button)
         view.styleSaveButton(button: saveButton)
         view.styleClearButton(button: clearButton)
+        
+        
     
         loadDefaultImages()
         clearButton.isHidden = true
         saveButton.isHidden = true
     }
     
+    func imageWith(text: String) -> UIImage? {
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        let nameLabel = UILabel(frame: frame)
+        nameLabel.textAlignment = .center
+        nameLabel.backgroundColor = .lightGray
+        nameLabel.textColor = .white
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 40)
+        nameLabel.text = text
+        UIGraphicsBeginImageContext(frame.size)
+        if let currentContext = UIGraphicsGetCurrentContext() {
+            nameLabel.layer.render(in: currentContext)
+            let nameImage = UIGraphicsGetImageFromCurrentImageContext()
+            return nameImage
+        }
+        return nil
+    }
+    
     func loadDefaultImages() {
-        let image = UIImage(named: "moneky.jpg")!
-        let images: [UIImage] = [image, image, image, image]
-        handleImagesUpload(images: images)
+//        let image = UIImage(named: "moneky.jpg")!
+        let img1 = imageWith(text: "1")
+        let img2 = imageWith(text: "2")
+        let img3 = imageWith(text: "3")
+        let img4 = imageWith(text: "4")
+        if let img1 = img1, let img2 = img2, let img3 = img3, let img4 = img4 {
+            let images: [UIImage] = [img1, img2, img3, img4]
+            handleImagesUpload(images: images)
+        }
+        
     }
     
     func handleImagesUpload(images: [UIImage]) {
@@ -84,40 +109,31 @@ class ViewController: UIViewController {
         clearButton.isHidden = false
     }
 
-    let alert = UIAlertController(title: nil, message: "Saving to Library...", preferredStyle: .alert)
     func saveToLibrary(image: UIImage) {
-        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
-        loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorView.Style.gray
-        loadingIndicator.startAnimating();
-        
-        alert.view.addSubview(loadingIndicator)
-        present(alert, animated: true, completion: nil)
-        
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
     @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        alert.dismiss(animated: false, completion: nil)
-        
         if let error = error {
             // we got back an error!
             let ac = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         } else {
-            let ac = UIAlertController(title: "Saved!", message: "Your altered image has been saved to your photos.", preferredStyle: .alert)
+            let ac = UIAlertController(title: "Saved!", message: "The meme has been saved to your photos.", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         }
     }
     
     @IBAction func openGallery(_ sender: Any) {
-        //        let pickerConfig = AssetsPickerConfig()
-        //        pickerConfig.assetCellType = CustomAssetCell.classForCoder()
-        //        picker.pickerConfig = pickerConfig
+//        let pickerConfig = AssetsPickerConfig()
+//        pickerConfig.assetCellType = CustomAssetCell.classForCoder()
+        
         let picker = AssetsPickerViewController()
+//        picker.pickerConfig = pickerConfig
         picker.pickerDelegate = self
+        
         present(picker, animated: true, completion: nil)
     }
     @IBAction func savePhoto(_ sender: Any) {

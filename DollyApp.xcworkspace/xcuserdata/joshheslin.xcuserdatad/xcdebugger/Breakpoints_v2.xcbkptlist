@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DollyApp/ViewController.swift"
-            timestampString = "601624488.705742"
+            timestampString = "601625154.2946171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "ViewController"
             landmarkType = "21">
          </BreakpointContent>
