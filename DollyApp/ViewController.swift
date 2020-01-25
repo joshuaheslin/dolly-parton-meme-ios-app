@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     func addBannerViewToView(_ bannerView: GADBannerView) {
         // 350 x 50 or 350 x 100
         let screenSize: CGRect = UIScreen.main.bounds
-        bannerView.frame = CGRect(x: 0, y: 45, width: screenSize.width, height: 200);
+        bannerView.frame = CGRect(x: 0, y: 45, width: screenSize.width, height: 100);
         bannerView.center.x = view.center.x
         view.addSubview(bannerView)
     }
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     }
     
     func handleImagesUpload(images: [UIImage]) {
-        let offset: CGFloat = 245
+        let offset: CGFloat = 150
         let screenSize: CGRect = UIScreen.main.bounds
         mainView.frame = CGRect(x: 0, y: offset, width: screenSize.width, height: screenSize.width);
         

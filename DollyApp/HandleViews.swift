@@ -35,7 +35,7 @@ class HandleViews {
         label.textColor = UIColor.white
 
         let attributes: [NSAttributedString.Key : Any] = [
-//            .strokeColor : UIColor.black,
+            .strokeColor : UIColor.black,
             .foregroundColor : UIColor.white,
 //            .strokeWidth : -2,
             .font : UIFont.systemFont(ofSize: 25, weight: .heavy),
