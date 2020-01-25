@@ -586,6 +586,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = joshuaheslinkas.DollyApp;
 				PRODUCT_NAME = "Dolly Parton Challenge";
 				SWIFT_VERSION = 4.0;
@@ -606,6 +607,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = joshuaheslinkas.DollyApp;
 				PRODUCT_NAME = "Dolly Parton Challenge";
 				SWIFT_VERSION = 4.0;
