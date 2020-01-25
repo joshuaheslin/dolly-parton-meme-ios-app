@@ -14,6 +14,9 @@
 		0E1D1E0123DBC521008833E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1D1DFF23DBC521008833E3 /* LaunchScreen.storyboard */; };
 		0E1D1E0C23DBC521008833E3 /* DollyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D1E0B23DBC521008833E3 /* DollyAppTests.swift */; };
 		0E1D1E1723DBC521008833E3 /* DollyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D1E1623DBC521008833E3 /* DollyAppUITests.swift */; };
+		0E49787723DCF78E00568CE7 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49787623DCF78E00568CE7 /* LaunchScreenViewController.swift */; };
+		0E49787923DCF7C500568CE7 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E49787823DCF7C500568CE7 /* GetStartedViewController.swift */; };
+		0E49787B23DCFBAA00568CE7 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E49787A23DCFBAA00568CE7 /* photo.png */; };
 		0E51978A23DBF0D40019CF12 /* moneky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E51978923DBF0D40019CF12 /* moneky.jpg */; };
 		0E51978C23DBFD280019CF12 /* HandleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51978B23DBFD280019CF12 /* HandleViews.swift */; };
 		93AD0A9ED72B442497DBD860 /* Pods_DollyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FB1299EC44E60B001EEC6 /* Pods_DollyAppTests.framework */; };
@@ -52,6 +55,9 @@
 		0E1D1E1223DBC521008833E3 /* DollyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1D1E1623DBC521008833E3 /* DollyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollyAppUITests.swift; sourceTree = "<group>"; };
 		0E1D1E1823DBC521008833E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E49787623DCF78E00568CE7 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		0E49787823DCF7C500568CE7 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		0E49787A23DCFBAA00568CE7 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo.png; path = Assets/photo.png; sourceTree = SOURCE_ROOT; };
 		0E51978923DBF0D40019CF12 /* moneky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moneky.jpg; sourceTree = "<group>"; };
 		0E51978B23DBFD280019CF12 /* HandleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleViews.swift; sourceTree = "<group>"; };
 		1A5CE48FB729259AB78E8E44 /* Pods-DollyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DollyAppUITests/Pods-DollyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,9 +128,12 @@
 				0E1D1DF823DBC51F008833E3 /* ViewController.swift */,
 				0E51978923DBF0D40019CF12 /* moneky.jpg */,
 				0E1D1DFA23DBC51F008833E3 /* Main.storyboard */,
+				0E49787823DCF7C500568CE7 /* GetStartedViewController.swift */,
 				0E51978B23DBFD280019CF12 /* HandleViews.swift */,
+				0E49787A23DCFBAA00568CE7 /* photo.png */,
 				0E1D1DFD23DBC521008833E3 /* Assets.xcassets */,
 				0E1D1DFF23DBC521008833E3 /* LaunchScreen.storyboard */,
+				0E49787623DCF78E00568CE7 /* LaunchScreenViewController.swift */,
 				0E1D1E0223DBC521008833E3 /* Info.plist */,
 			);
 			path = DollyApp;
@@ -281,6 +290,7 @@
 			files = (
 				0E51978A23DBF0D40019CF12 /* moneky.jpg in Resources */,
 				0E1D1E0123DBC521008833E3 /* LaunchScreen.storyboard in Resources */,
+				0E49787B23DCFBAA00568CE7 /* photo.png in Resources */,
 				0E1D1DFE23DBC521008833E3 /* Assets.xcassets in Resources */,
 				0E1D1DFC23DBC51F008833E3 /* Main.storyboard in Resources */,
 			);
@@ -402,7 +412,9 @@
 			files = (
 				0E1D1DF923DBC51F008833E3 /* ViewController.swift in Sources */,
 				0E51978C23DBFD280019CF12 /* HandleViews.swift in Sources */,
+				0E49787723DCF78E00568CE7 /* LaunchScreenViewController.swift in Sources */,
 				0E1D1DF723DBC51F008833E3 /* AppDelegate.swift in Sources */,
+				0E49787923DCF7C500568CE7 /* GetStartedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +598,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = joshuaheslinkas.DollyApp;
 				PRODUCT_NAME = "Dolly Parton Challenge";
 				SWIFT_VERSION = 4.0;
@@ -607,7 +619,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = joshuaheslinkas.DollyApp;
 				PRODUCT_NAME = "Dolly Parton Challenge";
 				SWIFT_VERSION = 4.0;

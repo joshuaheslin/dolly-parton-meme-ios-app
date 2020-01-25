@@ -15,10 +15,10 @@
             timestampString = "601625154.2946171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "asImage()"
-            landmarkType = "7">
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "UIView"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

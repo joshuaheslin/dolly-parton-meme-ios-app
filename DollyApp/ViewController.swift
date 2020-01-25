@@ -219,22 +219,6 @@ extension ViewController: AssetsPickerViewControllerDelegate {
         handleImagesUpload(images: images)
     }
     func convertImageFromAsset(asset: PHAsset) -> UIImage {
-        
-//        let options = PHImageRequestOptions()
-//        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
-//        options.isSynchronous = false
-//        options.isNetworkAccessAllowed = true
-//
-//        options.progressHandler = {  (progress, error, stop, info) in
-//            print("progress: \(progress)")
-//        }
-
-//        PHImageManager.default().requestImage(for: myPHAsset, targetSize: view.frame.size, contentMode: PHImageContentMode.aspectFill, options: options, resultHandler: {
-//         (image, info) in
-//            print("dict: \(String(describing: info))")
-//            print("image size: \(String(describing: image?.size))")
-//        })
-        
         var image = UIImage()
         let manager = PHImageManager.default()
         let options = PHImageRequestOptions()

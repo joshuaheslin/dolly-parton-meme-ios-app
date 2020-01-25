@@ -37,7 +37,7 @@ class HandleViews {
         let attributes: [NSAttributedString.Key : Any] = [
             .strokeColor : UIColor.black,
             .foregroundColor : UIColor.white,
-//            .strokeWidth : -2,
+            .strokeWidth : -2,
             .font : UIFont.systemFont(ofSize: 25, weight: .heavy),
         ]
 
