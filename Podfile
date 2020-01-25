@@ -10,6 +10,8 @@ target 'DollyApp' do
     #  pod "JLStickerTextView", "~> 0.1.1"
     #    pod 'OpalImagePicker'
     pod 'AssetsPickerViewController', '~> 2.0'
+    
+    pod 'LGButton'
 
 
     #    pod 'DKImagePickerController'

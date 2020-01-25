@@ -18,45 +18,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foX-bf-IOc">
-                                <rect key="frame" x="184" y="574" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="Zm5-jw-xEP"/>
-                                    <constraint firstAttribute="height" constant="30" id="npL-0E-v5u"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGe-cS-bcb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecQ-UI-cum">
-                                <rect key="frame" x="177" y="525" width="61" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="6k1-uW-7Pd"/>
-                                    <constraint firstAttribute="width" constant="61" id="BLG-mg-nAp"/>
-                                </constraints>
-                                <state key="normal" title="Add Text"/>
-                                <connections>
-                                    <action selector="addTextToImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G69-UA-oMc"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C28-im-kCa">
                                 <rect key="frame" x="87" y="84" width="240" height="271"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLE-Fe-h1p">
+                                <rect key="frame" x="20" y="797" width="374" height="65"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="ChJ-m8-CcD"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Open Gallery">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="openGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fA-ch-AcU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsv-xq-Vdg">
+                                <rect key="frame" x="130" y="712" width="264" height="65"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="TwE-68-rZP"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Save Photo">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="savePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLj-eV-lQV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T55-Or-MuS">
+                                <rect key="frame" x="20" y="712" width="89" height="65"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="19l-7r-eJN"/>
+                                    <constraint firstAttribute="height" constant="65" id="Gru-iY-aC8"/>
+                                </constraints>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kQ3-1O-XDX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="foX-bf-IOc" secondAttribute="bottom" constant="258" id="0XW-s8-cnx"/>
-                            <constraint firstItem="ecQ-UI-cum" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="396-Wn-q6o"/>
-                            <constraint firstItem="foX-bf-IOc" firstAttribute="top" secondItem="ecQ-UI-cum" secondAttribute="bottom" constant="19" id="MAF-YF-rQI"/>
-                            <constraint firstItem="foX-bf-IOc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="RsJ-nX-clv"/>
+                            <constraint firstItem="dLE-Fe-h1p" firstAttribute="top" secondItem="gsv-xq-Vdg" secondAttribute="bottom" constant="20" id="1e0-v2-MKu"/>
+                            <constraint firstItem="dLE-Fe-h1p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Gq3-7I-vaO"/>
+                            <constraint firstItem="dLE-Fe-h1p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="SDC-G6-Lb4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gsv-xq-Vdg" secondAttribute="trailing" constant="20" id="djp-9H-Ten"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dLE-Fe-h1p" secondAttribute="trailing" constant="20" id="ffU-2q-oUd"/>
+                            <constraint firstItem="dLE-Fe-h1p" firstAttribute="top" secondItem="T55-Or-MuS" secondAttribute="bottom" constant="20" id="hdS-nO-4qE"/>
+                            <constraint firstItem="gsv-xq-Vdg" firstAttribute="leading" secondItem="T55-Or-MuS" secondAttribute="trailing" constant="21" id="iFZ-Ka-fTQ"/>
+                            <constraint firstItem="T55-Or-MuS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="in8-no-Y0u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="dLE-Fe-h1p" id="d3S-af-dpt"/>
+                        <outlet property="clearButton" destination="T55-Or-MuS" id="mX9-l8-FM2"/>
                         <outlet property="mainView" destination="C28-im-kCa" id="ScO-Oe-my5"/>
+                        <outlet property="saveButton" destination="gsv-xq-Vdg" id="cOn-Dm-73t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,68 +13,84 @@ import Photos
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var button: UIButton!
     @IBOutlet weak var mainView: UIView!
+    
     var imageViewOne: UIImageView!
+    var imageViewTwo: UIImageView!
+    var imageViewThree: UIImageView!
+    var imageViewFour: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        setupImageViews()
-        addLabels()
-        let image = mainView.asImage()
-        print (image)
-        saveToLibrary(image: image)
+    
+        let view = MainView()
+        view.styleButton(button: button)
+        view.styleSaveButton(button: saveButton)
+        view.styleSaveButton(button: clearButton)
+    
+        loadDefaultImages()
+        clearButton.isHidden = true
+        saveButton.isHidden = true
     }
     
-    func addLabels() {
-        if (imageViewOne != nil) {
-            addLabelTo(imageView: imageViewOne, string: "HELLO")
-        }
+    func loadDefaultImages() {
+        let image = UIImage(named: "moneky.jpg")!
+        let images: [UIImage] = [image, image, image, image]
+        handleImagesUpload(images: images)
     }
-
-    func setupImageViews() {
+    
+    func handleImagesUpload(images: [UIImage]) {
         let screenSize: CGRect = UIScreen.main.bounds
         mainView.backgroundColor = .red
         mainView.frame = CGRect(x: 0, y: 80, width: screenSize.width, height: screenSize.width);
-        // so it's square
         
-        let image = UIImage(named: "moneky.jpg")
-        imageViewOne = UIImageView(image: image)
-    
         let imageWidth = mainView.frame.width / 2
         let imageHeight = mainView.frame.width / 2
         
-        imageViewOne.frame = CGRect(x: 0 + imageWidth, y: 0, width: imageWidth, height: imageHeight)
+        imageViewOne = UIImageView(image: images[0])
+        imageViewOne.frame = CGRect(x: 0, y: 0, width: imageWidth, height: imageHeight)
+        
+        imageViewTwo = UIImageView(image: images[1])
+        imageViewTwo.frame = CGRect(x: 0 + imageWidth, y: 0, width: imageWidth, height: imageHeight)
+        
+        imageViewThree = UIImageView(image: images[2])
+        imageViewThree.frame = CGRect(x: 0, y: 0 + imageWidth, width: imageWidth, height: imageHeight)
+        
+        imageViewFour = UIImageView(image: images[3])
+        imageViewFour.frame = CGRect(x: 0 + imageWidth, y: 0 + imageWidth, width: imageWidth, height: imageHeight)
         
         mainView.addSubview(imageViewOne)
+        mainView.addSubview(imageViewTwo)
+        mainView.addSubview(imageViewThree)
+        mainView.addSubview(imageViewFour)
+        
         mainView.bringSubview(toFront: imageViewOne)
-        
+        mainView.bringSubview(toFront: imageViewTwo)
+        mainView.bringSubview(toFront: imageViewThree)
+        mainView.bringSubview(toFront: imageViewFour)
+    
+        let view = MainView()
+        let l = imageViewOne.frame.width
+        view.addLabelTo(view: mainView, imageView: imageViewOne, string: "LinkedIn", x: l / 2, y: l)
+        view.addLabelTo(view: mainView, imageView: imageViewTwo, string: "Facebook", x: l * 1.5, y: l)
+        view.addLabelTo(view: mainView, imageView: imageViewThree, string: "Instagram", x: l * 0.5, y: l * 2)
+        view.addLabelTo(view: mainView, imageView: imageViewFour, string: "Tinder", x: l * 1.5, y: l * 2)
+    
+        saveButton.isHidden = false
+        clearButton.isHidden = false
     }
     
-    func addLabelTo(imageView: UIImageView, string: String) {
-        let length = imageView.frame.width
-        let offset: CGFloat = 25
-        let label = UILabel(frame: CGRect(x: length / 2, y: length - offset, width: length / 2, height: offset))
-        label.center.x = imageView.center.x
-        label.textColor = UIColor.white
+    func addImages(images: [UIImage]) {
         
-        let attributes: [NSAttributedString.Key : Any] = [
-            .strokeColor : UIColor.black,
-            .foregroundColor : UIColor.white,
-            .strokeWidth : -2,
-            .font : UIFont.systemFont(ofSize: 20, weight: .heavy),
-        ]
         
-        let attributedText = NSMutableAttributedString(string: string, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)])
-        attributedText.addAttributes(attributes, range: NSRange(location: 0, length: string.count))
         
-        label.attributedText = attributedText
-        label.textAlignment = .center
-        
-        mainView.addSubview(label)
-        mainView.bringSubview(toFront: label)
+        //add lables here
     }
-    
+
     func saveToLibrary(image: UIImage) {
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
@@ -92,20 +108,23 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func buttonClicked(_ sender: Any) {
-        print("tapped")
-        
-//        let pickerConfig = AssetsPickerConfig()
-//        pickerConfig.assetCellType = CustomAssetCell.classForCoder()
-//        picker.pickerConfig = pickerConfig
-        
+    @IBAction func openGallery(_ sender: Any) {
+        //        let pickerConfig = AssetsPickerConfig()
+        //        pickerConfig.assetCellType = CustomAssetCell.classForCoder()
+        //        picker.pickerConfig = pickerConfig
         let picker = AssetsPickerViewController()
         picker.pickerDelegate = self
-    
         present(picker, animated: true, completion: nil)
-        
     }
-    
+    @IBAction func savePhoto(_ sender: Any) {
+        let image = mainView.asImage()
+        saveToLibrary(image: image)
+    }
+    @IBAction func clearButtonTapped(_ sender: Any) {
+        loadDefaultImages()
+        saveButton.isHidden = true
+        clearButton.isHidden = true
+    }
 }
 
 extension UIView {
@@ -134,9 +153,18 @@ extension ViewController: AssetsPickerViewControllerDelegate {
         print ("Asset Picker cancelled")
     }
     func assetsPicker(controller: AssetsPickerViewController, selected assets: [PHAsset]) {
-        print ("clicked done")
-        print (assets)
-//        imageView.image = convertImageFromAsset(asset: assets[0])
+        if (assets.count != 4) {
+            let alert = UIAlertController(title: "Try Again", message: "Please select 4 images.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+            return
+        }
+        
+        var images: [UIImage] = []
+        for asset in assets {
+            images.append(convertImageFromAsset(asset: asset))
+        }
+        handleImagesUpload(images: images)
     }
     func convertImageFromAsset(asset: PHAsset) -> UIImage {
         let manager = PHImageManager.default()
@@ -150,8 +178,8 @@ extension ViewController: AssetsPickerViewControllerDelegate {
     }
     func assetsPicker(controller: AssetsPickerViewController, shouldSelect asset: PHAsset, at indexPath: IndexPath) -> Bool {
         // can limit selection count
-        print ("should select \(indexPath.row)")
-        if controller.selectedAssets.count > 3 {
+//        print ("should select \(indexPath.row)")
+        if controller.selectedAssets.count >= 4 {
             // do your job here
             print ("more than 3 selected")
             return false

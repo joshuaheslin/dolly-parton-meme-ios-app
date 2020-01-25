@@ -13,6 +13,7 @@ PODS:
     - TinyLog (~> 2.0)
     - UIViewKVO (~> 2.0)
   - FadeView (2.0.0)
+  - LGButton (1.0.5)
   - PureLayout (3.0.2)
   - SwiftARGB (2.0.0)
   - TinyLog (2.0.7)
@@ -20,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - AssetsPickerViewController (~> 2.0)
+  - LGButton
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -27,6 +29,7 @@ SPEC REPOS:
     - Device
     - Dimmer
     - FadeView
+    - LGButton
     - PureLayout
     - SwiftARGB
     - TinyLog
@@ -37,11 +40,12 @@ SPEC CHECKSUMS:
   Device: 9a5264ee4e0f392e7153d2c46b10c8df46b7aad2
   Dimmer: 9908a0003f4882eca1b2e318e11f82d32280794e
   FadeView: 80197da2fbee5382b178127e8c5f988a35eef018
+  LGButton: 707ce916eb80b73a6c4688df34bee11adbafb663
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SwiftARGB: 8727cfcdcfe8709e707a2391f1d5802a7c40dcad
   TinyLog: 073a9abfd44a944886d5d07aa49cbba5ef192335
   UIViewKVO: 091f9e020d69e73c4bf5e5ef61cde7bff1c24bbf
 
-PODFILE CHECKSUM: 23fb46fa467337846867ca4c6640490e4ab7a901
+PODFILE CHECKSUM: ea29ad8a338fffcddfde5296c43cd16fa038f7c6
 
 COCOAPODS: 1.5.3
