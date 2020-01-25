@@ -15,6 +15,7 @@
 		0E1D1E0C23DBC521008833E3 /* DollyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D1E0B23DBC521008833E3 /* DollyAppTests.swift */; };
 		0E1D1E1723DBC521008833E3 /* DollyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D1E1623DBC521008833E3 /* DollyAppUITests.swift */; };
 		0E51978823DBE4290019CF12 /* CustomAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51978723DBE4290019CF12 /* CustomAssetCell.swift */; };
+		0E51978A23DBF0D40019CF12 /* moneky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E51978923DBF0D40019CF12 /* moneky.jpg */; };
 		0EBC58D523DBC8C300824DBF /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC58D423DBC8C300824DBF /* ImagePickerManager.swift */; };
 		93AD0A9ED72B442497DBD860 /* Pods_DollyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FB1299EC44E60B001EEC6 /* Pods_DollyAppTests.framework */; };
 		B29350F24086BDA2AAD27375 /* Pods_DollyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4744FB8C0E8F8640B2F4C83F /* Pods_DollyAppUITests.framework */; };
@@ -53,6 +54,7 @@
 		0E1D1E1623DBC521008833E3 /* DollyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollyAppUITests.swift; sourceTree = "<group>"; };
 		0E1D1E1823DBC521008833E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E51978723DBE4290019CF12 /* CustomAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAssetCell.swift; sourceTree = "<group>"; };
+		0E51978923DBF0D40019CF12 /* moneky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moneky.jpg; sourceTree = "<group>"; };
 		0EBC58D423DBC8C300824DBF /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		1A5CE48FB729259AB78E8E44 /* Pods-DollyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DollyAppUITests/Pods-DollyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D1FB1299EC44E60B001EEC6 /* Pods_DollyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				0E1D1DF823DBC51F008833E3 /* ViewController.swift */,
 				0E51978723DBE4290019CF12 /* CustomAssetCell.swift */,
 				0EBC58D423DBC8C300824DBF /* ImagePickerManager.swift */,
+				0E51978923DBF0D40019CF12 /* moneky.jpg */,
 				0E1D1DFA23DBC51F008833E3 /* Main.storyboard */,
 				0E1D1DFD23DBC521008833E3 /* Assets.xcassets */,
 				0E1D1DFF23DBC521008833E3 /* LaunchScreen.storyboard */,
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E51978A23DBF0D40019CF12 /* moneky.jpg in Resources */,
 				0E1D1E0123DBC521008833E3 /* LaunchScreen.storyboard in Resources */,
 				0E1D1DFE23DBC521008833E3 /* Assets.xcassets in Resources */,
 				0E1D1DFC23DBC51F008833E3 /* Main.storyboard in Resources */,
