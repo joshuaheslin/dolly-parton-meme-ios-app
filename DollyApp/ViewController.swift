@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import AssetsPickerViewController
 import Photos
+import GoogleMobileAds
 
 class ViewController: UIViewController {
     
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var mainView: UIView!
     
+    var bannerView: GADBannerView!
+    
     var imageViewOne: UIImageView!
     var imageViewTwo: UIImageView!
     var imageViewThree: UIImageView!
@@ -25,17 +28,38 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.setNeedsStatusBarAppearanceUpdate()
     
-        let view = MainView()
+        let view = HandleViews()
         view.styleButton(button: button)
         view.styleSaveButton(button: saveButton)
         view.styleClearButton(button: clearButton)
         
+        // test adunit id = ca-app-pub-3940256099942544/2934735716
+        // my adunit id = ca-app-pub-4916416515738035/5715541470
+        bannerView = GADBannerView(adSize: kGADAdSizeLargeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-4916416515738035/5715541470"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         
     
         loadDefaultImages()
         clearButton.isHidden = true
         saveButton.isHidden = true
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        // 350 x 50 or 350 x 100
+        let screenSize: CGRect = UIScreen.main.bounds
+        bannerView.frame = CGRect(x: 0, y: 45, width: screenSize.width, height: 200);
+        bannerView.center.x = view.center.x
+        view.addSubview(bannerView)
     }
     
     func imageWith(text: String) -> UIImage? {
@@ -69,24 +93,32 @@ class ViewController: UIViewController {
     }
     
     func handleImagesUpload(images: [UIImage]) {
+        let offset: CGFloat = 245
         let screenSize: CGRect = UIScreen.main.bounds
-        mainView.backgroundColor = .red
-        mainView.frame = CGRect(x: 0, y: 80, width: screenSize.width, height: screenSize.width);
+        mainView.frame = CGRect(x: 0, y: offset, width: screenSize.width, height: screenSize.width);
         
         let imageWidth = mainView.frame.width / 2
         let imageHeight = mainView.frame.width / 2
         
         imageViewOne = UIImageView(image: images[0])
         imageViewOne.frame = CGRect(x: 0, y: 0, width: imageWidth, height: imageHeight)
+        imageViewOne.contentMode = .scaleAspectFill
+        imageViewOne.clipsToBounds = true;
         
         imageViewTwo = UIImageView(image: images[1])
         imageViewTwo.frame = CGRect(x: 0 + imageWidth, y: 0, width: imageWidth, height: imageHeight)
+        imageViewTwo.contentMode = .scaleAspectFill
+        imageViewTwo.clipsToBounds = true;
         
         imageViewThree = UIImageView(image: images[2])
         imageViewThree.frame = CGRect(x: 0, y: 0 + imageWidth, width: imageWidth, height: imageHeight)
+        imageViewThree.contentMode = .scaleAspectFill
+        imageViewThree.clipsToBounds = true;
         
         imageViewFour = UIImageView(image: images[3])
         imageViewFour.frame = CGRect(x: 0 + imageWidth, y: 0 + imageWidth, width: imageWidth, height: imageHeight)
+        imageViewFour.contentMode = .scaleAspectFill
+        imageViewFour.clipsToBounds = true;
         
         mainView.addSubview(imageViewOne)
         mainView.addSubview(imageViewTwo)
@@ -98,12 +130,12 @@ class ViewController: UIViewController {
         mainView.bringSubview(toFront: imageViewThree)
         mainView.bringSubview(toFront: imageViewFour)
     
-        let view = MainView()
+        let view = HandleViews()
         let l = imageViewOne.frame.width
-        view.addLabelTo(view: mainView, imageView: imageViewOne, string: "LinkedIn", x: l / 2, y: l)
-        view.addLabelTo(view: mainView, imageView: imageViewTwo, string: "Facebook", x: l * 1.5, y: l)
-        view.addLabelTo(view: mainView, imageView: imageViewThree, string: "Instagram", x: l * 0.5, y: l * 2)
-        view.addLabelTo(view: mainView, imageView: imageViewFour, string: "Tinder", x: l * 1.5, y: l * 2)
+        view.addLabelTo(view: mainView, imageView: imageViewOne, string: "LINKEDIN", x: l / 2, y: l)
+        view.addLabelTo(view: mainView, imageView: imageViewTwo, string: "FACEBOOK", x: l * 1.5, y: l)
+        view.addLabelTo(view: mainView, imageView: imageViewThree, string: "INSTAGRAM", x: l * 0.5, y: l * 2)
+        view.addLabelTo(view: mainView, imageView: imageViewFour, string: "TINDER", x: l * 1.5, y: l * 2)
     
         saveButton.isHidden = false
         clearButton.isHidden = false
@@ -120,7 +152,7 @@ class ViewController: UIViewController {
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         } else {
-            let ac = UIAlertController(title: "Saved!", message: "The meme has been saved to your photos.", preferredStyle: .alert)
+            let ac = UIAlertController(title: "Saved to Photos", message: "Your meme has been saved to your photos.", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
         }
@@ -187,12 +219,36 @@ extension ViewController: AssetsPickerViewControllerDelegate {
         handleImagesUpload(images: images)
     }
     func convertImageFromAsset(asset: PHAsset) -> UIImage {
-        let manager = PHImageManager.default()
-        let option = PHImageRequestOptions()
+        
+//        let options = PHImageRequestOptions()
+//        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+//        options.isSynchronous = false
+//        options.isNetworkAccessAllowed = true
+//
+//        options.progressHandler = {  (progress, error, stop, info) in
+//            print("progress: \(progress)")
+//        }
+
+//        PHImageManager.default().requestImage(for: myPHAsset, targetSize: view.frame.size, contentMode: PHImageContentMode.aspectFill, options: options, resultHandler: {
+//         (image, info) in
+//            print("dict: \(String(describing: info))")
+//            print("image size: \(String(describing: image?.size))")
+//        })
+        
         var image = UIImage()
-        option.isSynchronous = true
-        manager.requestImage(for: asset, targetSize: PHImageManagerMaximumSize, contentMode: .aspectFit, options: option, resultHandler: {(result, info)->Void in
-            image = result!
+        let manager = PHImageManager.default()
+        let options = PHImageRequestOptions()
+        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+        options.isSynchronous = true
+        options.isNetworkAccessAllowed = true
+        options.progressHandler = {  (progress, error, stop, info) in
+            print("progress: \(progress)")
+        }
+        options.normalizedCropRect = CGRect(x: 0, y: 0, width: 500, height: 500)
+        manager.requestImage(for: asset, targetSize: CGSize(width: 500, height: 500), contentMode: .aspectFit, options: options, resultHandler: {(result, info)->Void in
+            if let result = result {
+                image = result
+            }
         })
         return image
     }

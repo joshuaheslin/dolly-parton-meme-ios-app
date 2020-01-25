@@ -15,7 +15,7 @@
 		0E1D1E0C23DBC521008833E3 /* DollyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D1E0B23DBC521008833E3 /* DollyAppTests.swift */; };
 		0E1D1E1723DBC521008833E3 /* DollyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D1E1623DBC521008833E3 /* DollyAppUITests.swift */; };
 		0E51978A23DBF0D40019CF12 /* moneky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E51978923DBF0D40019CF12 /* moneky.jpg */; };
-		0E51978C23DBFD280019CF12 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51978B23DBFD280019CF12 /* MainView.swift */; };
+		0E51978C23DBFD280019CF12 /* HandleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E51978B23DBFD280019CF12 /* HandleViews.swift */; };
 		93AD0A9ED72B442497DBD860 /* Pods_DollyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FB1299EC44E60B001EEC6 /* Pods_DollyAppTests.framework */; };
 		B29350F24086BDA2AAD27375 /* Pods_DollyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4744FB8C0E8F8640B2F4C83F /* Pods_DollyAppUITests.framework */; };
 		D17A52FF477AFBD9AA0E00C6 /* Pods_DollyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD3D571845F0152A9ECD78D /* Pods_DollyApp.framework */; };
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E1D1DF323DBC51F008833E3 /* DollyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DollyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E1D1DF323DBC51F008833E3 /* Dolly Parton Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dolly Parton Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1D1DF623DBC51F008833E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E1D1DF823DBC51F008833E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E1D1DFB23DBC51F008833E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		0E1D1E1623DBC521008833E3 /* DollyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollyAppUITests.swift; sourceTree = "<group>"; };
 		0E1D1E1823DBC521008833E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E51978923DBF0D40019CF12 /* moneky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moneky.jpg; sourceTree = "<group>"; };
-		0E51978B23DBFD280019CF12 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0E51978B23DBFD280019CF12 /* HandleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleViews.swift; sourceTree = "<group>"; };
 		1A5CE48FB729259AB78E8E44 /* Pods-DollyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DollyAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DollyAppUITests/Pods-DollyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2D1FB1299EC44E60B001EEC6 /* Pods_DollyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD3D571845F0152A9ECD78D /* Pods_DollyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DollyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +108,7 @@
 		0E1D1DF423DBC51F008833E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E1D1DF323DBC51F008833E3 /* DollyApp.app */,
+				0E1D1DF323DBC51F008833E3 /* Dolly Parton Challenge.app */,
 				0E1D1E0723DBC521008833E3 /* DollyAppTests.xctest */,
 				0E1D1E1223DBC521008833E3 /* DollyAppUITests.xctest */,
 			);
@@ -122,7 +122,7 @@
 				0E1D1DF823DBC51F008833E3 /* ViewController.swift */,
 				0E51978923DBF0D40019CF12 /* moneky.jpg */,
 				0E1D1DFA23DBC51F008833E3 /* Main.storyboard */,
-				0E51978B23DBFD280019CF12 /* MainView.swift */,
+				0E51978B23DBFD280019CF12 /* HandleViews.swift */,
 				0E1D1DFD23DBC521008833E3 /* Assets.xcassets */,
 				0E1D1DFF23DBC521008833E3 /* LaunchScreen.storyboard */,
 				0E1D1E0223DBC521008833E3 /* Info.plist */,
@@ -190,7 +190,7 @@
 			);
 			name = DollyApp;
 			productName = DollyApp;
-			productReference = 0E1D1DF323DBC51F008833E3 /* DollyApp.app */;
+			productReference = 0E1D1DF323DBC51F008833E3 /* Dolly Parton Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0E1D1E0623DBC521008833E3 /* DollyAppTests */ = {
@@ -368,11 +368,12 @@
 				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
 				"${BUILT_PRODUCTS_DIR}/Dimmer/Dimmer.framework",
 				"${BUILT_PRODUCTS_DIR}/FadeView/FadeView.framework",
-				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftARGB/SwiftARGB.framework",
 				"${BUILT_PRODUCTS_DIR}/TinyLog/TinyLog.framework",
 				"${BUILT_PRODUCTS_DIR}/UIViewKVO/UIViewKVO.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -380,11 +381,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dimmer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FadeView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftARGB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyLog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewKVO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,7 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E1D1DF923DBC51F008833E3 /* ViewController.swift in Sources */,
-				0E51978C23DBFD280019CF12 /* MainView.swift in Sources */,
+				0E51978C23DBFD280019CF12 /* HandleViews.swift in Sources */,
 				0E1D1DF723DBC51F008833E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,7 +587,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = joshuaheslinkas.DollyApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dolly Parton Challenge";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,7 +607,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = joshuaheslinkas.DollyApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dolly Parton Challenge";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

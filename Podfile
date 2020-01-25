@@ -6,15 +6,10 @@ target 'DollyApp' do
   use_frameworks!
 
   # Pods for DollyApp
-
-    #  pod "JLStickerTextView", "~> 0.1.1"
-    #    pod 'OpalImagePicker'
     pod 'AssetsPickerViewController', '~> 2.0'
     
-    pod 'LGButton'
-
-
-    #    pod 'DKImagePickerController'
+    #pod 'Google-Mobile-Ads-SDK'
+    pod 'Google-Mobile-Ads-SDK', '~> 7.43'
 
   target 'DollyAppTests' do
     inherit! :search_paths
