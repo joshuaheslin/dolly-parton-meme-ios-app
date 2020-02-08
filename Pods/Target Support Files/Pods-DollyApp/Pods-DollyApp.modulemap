@@ -1,6 +1,0 @@
-framework module Pods_DollyApp {
-  umbrella header "Pods-DollyApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
